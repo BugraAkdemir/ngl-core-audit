@@ -130,7 +130,7 @@ export default function Send() {
         >
           <div className="ig-gate-header">
             <div className="ngl-logo-gate">NGL</div>
-            <p className="gate-subtitle">anonim mesajlar al</p>
+            <p className="gate-subtitle">anonim mesaj gönder</p>
           </div>
 
           <button className="ig-connect-btn" onClick={() => setStep('ig_login')}>
@@ -144,7 +144,7 @@ export default function Send() {
 
           <div className="gate-security">
             <span>🔒</span>
-            <span>Instagram hesabınla giriş yap ve anonim mesajlar almaya başla</span>
+            <span>Mesaj göndermek için Instagram hesabınla doğrulama yap</span>
           </div>
         </motion.div>
       );
@@ -163,7 +163,7 @@ export default function Send() {
             <h3>instagram adresini doğrula</h3>
           </div>
           <p className="trust-note">
-            bana anonim mesajlar gönderebilmek için instagram hesabını bağlaman gerekiyor.
+            mesaj gönderebilmek için instagram kullanıcı adını gir.
           </p>
 
           <div className="input-field-group">
@@ -276,15 +276,15 @@ export default function Send() {
             className="footer-elements"
           >
             <div className="lock-indicator">
-              <span>🔒</span> anonim soru ve cevap
+              <span>🔒</span> anonim mesaj gönder
             </div>
 
             <div className="story-count">
-              👇 214 arkadaşlar az önce bastı 👇
+              👇 214 kişi az önce mesaj gönderdi 👇
             </div>
 
             <button className="ngl-button app-action">
-              Kendi mesajlarını al!
+              Sen de anonim mesaj gönder!
             </button>
           </motion.div>
         )}
