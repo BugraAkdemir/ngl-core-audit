@@ -4,9 +4,10 @@ import { MoreHorizontal, Download, Shield, User, Globe, Search, Inbox, Layout, S
 import { useNavigate } from 'react-router-dom';
 import html2canvas from 'html2canvas';
 import StoryCanvas from '../components/StoryCanvas';
+import { getAllMessages, getAllMedia, getSettings, updateSettings, saveMediaEntry } from '../lib/firebase';
 
 export default function Admin() {
-  const [activeTab, setActiveTab] = useState('inbox'); // inbox, media, settings
+  const [activeTab, setActiveTab] = useState('inbox');
   const [messages, setMessages] = useState([]);
   const [activeMessage, setActiveMessage] = useState('');
   const [searchTerm, setSearchTerm] = useState('');
@@ -23,39 +24,29 @@ export default function Admin() {
     }
   }, [token, navigate]);
 
-  const authHeaders = {
-    'Authorization': `Bearer ${token}`
-  };
-
   const fetchFullData = async () => {
     try {
-      const res = await fetch('/api/admin/data', {
-        headers: authHeaders
-      });
-      const data = await res.json();
-      setMessages(data.messages || []);
-      setRequireIg(data.settings?.requireIg ?? true);
-      setMedia(data.media || []);
+      const [msgs, settings, mediaList] = await Promise.all([
+        getAllMessages(),
+        getSettings(),
+        getAllMedia()
+      ]);
+      setMessages(msgs);
+      setRequireIg(settings.requireIg ?? true);
+      setMedia(mediaList);
     } catch (err) {
       console.error('Failed to fetch admin data:', err);
     }
   };
 
   useEffect(() => {
-    fetchFullData();
+    if (token) fetchFullData();
   }, []);
 
   const handleToggleIg = async (val) => {
     setRequireIg(val);
     try {
-      await fetch('/api/admin/settings', {
-        method: 'POST',
-        headers: {
-          'Content-Type': 'application/json',
-          ...authHeaders
-        },
-        body: JSON.stringify({ requireIg: val })
-      });
+      await updateSettings({ requireIg: val });
     } catch (err) {
       console.error('Failed to update settings:', err);
     }
@@ -78,17 +69,7 @@ export default function Admin() {
           link.download = `ngl-story-${Date.now()}.png`;
           link.click();
 
-          // Save to media library metadata via API
-          await fetch('/api/admin/media', {
-            method: 'POST',
-            headers: {
-              'Content-Type': 'application/json',
-              ...authHeaders
-            },
-            body: JSON.stringify({ text, timestamp: new Date().toISOString() })
-          });
-
-          // Refresh data to show new media
+          await saveMediaEntry({ text });
           fetchFullData();
         } catch (err) {
           console.error('Download failed:', err);

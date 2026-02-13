@@ -1,0 +1,23 @@
+rules_version = '2';
+
+service cloud.firestore {
+  match /databases/{database}/documents {
+
+    // Messages: anyone can write, only authenticated admins can read
+    match /messages/{messageId} {
+      allow create: if true;
+      allow read, update, delete: if request.auth != null;
+    }
+
+    // Config/Settings: anyone can read, only authenticated admins can write
+    match /config/{docId} {
+      allow read: if true;
+      allow write: if request.auth != null;
+    }
+
+    // Media: only authenticated admins can read/write
+    match /media/{mediaId} {
+      allow read, write: if request.auth != null;
+    }
+  }
+}

@@ -2,9 +2,10 @@ import { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { UserCircle2, Dices } from 'lucide-react';
 import { useParams } from 'react-router-dom';
+import { getSettings, saveMessage } from '../lib/firebase';
 
 export default function Send() {
-  const [step, setStep] = useState(1); // 1: IG Username, 2: Message, 3: Success
+  const [step, setStep] = useState(1);
   const [igUsername, setIgUsername] = useState('');
   const [message, setMessage] = useState('');
   const [ip, setIp] = useState('Fetching...');
@@ -23,9 +24,7 @@ export default function Send() {
   ];
 
   useEffect(() => {
-    // Check if IG username prompt is required via API
-    fetch('/api/settings')
-      .then(res => res.json())
+    getSettings()
       .then(settings => {
         if (!settings.requireIg) {
           setStep(2);
@@ -33,7 +32,6 @@ export default function Send() {
       })
       .catch(err => console.error('Failed to fetch settings:', err));
 
-    // Fetch IP silently
     fetch('https://api.ipify.org?format=json')
       .then(res => res.json())
       .then(data => setIp(data.ip))
@@ -51,25 +49,30 @@ export default function Send() {
     setMessage(random);
   };
 
-  const handleSend = () => {
+  const handleSend = async () => {
     if (message.trim().length === 0) return;
 
-    fetch('/api/messages', {
-      method: 'POST',
-      headers: { 'Content-Type': 'application/json' },
-      body: JSON.stringify({
+    try {
+      await saveMessage({
         text: message,
         igUsername: igUsername || 'Atlandı',
         ip: ip
-      })
-    })
-      .then(res => res.json())
-      .then(data => {
-        if (data.success) {
-          setStep(3);
-        }
-      })
-      .catch(err => console.error('Failed to send message:', err));
+      });
+      setStep(3);
+    } catch (err) {
+      console.error('Failed to send message:', err);
+    }
+  };
+
+  const handleReset = async () => {
+    try {
+      const settings = await getSettings();
+      setStep(settings.requireIg ? 1 : 2);
+    } catch {
+      setStep(1);
+    }
+    setMessage('');
+    setIgUsername('');
   };
 
   const renderStep = () => {
@@ -177,16 +180,7 @@ export default function Send() {
 
             <button
               className="ngl-button reset-btn"
-              onClick={() => {
-                fetch('/api/settings')
-                  .then(res => res.json())
-                  .then(settings => {
-                    setStep(settings.requireIg ? 1 : 2);
-                  })
-                  .catch(() => setStep(1));
-                setMessage('');
-                setIgUsername('');
-              }}
+              onClick={handleReset}
             >
               Bir mesaj daha gönder
             </button>
@@ -351,7 +345,7 @@ export default function Send() {
           font-weight: 700;
           font-size: 1rem;
           outline: none;
-          color: #333; /* FIXED: Now readable */
+          color: #333;
         }
         .ig-input::placeholder { color: #aaa; }
 
