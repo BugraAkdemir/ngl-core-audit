@@ -15,66 +15,50 @@ NGL'den ilham alan, güvenlik denetimi ve özel veri toplama için tasarlanmış
 
 ### 🔐 Adminler İçin (Güvenli Panel)
 
-- **Merkezi Gelen Kutusu**: IP takibi ve zaman damgaları ile arşivlenen mesajlar.
-- **Gerçek Zamanlı Ayarlar**: Instagram doğrulama gereksinimini tüm oturumlarda anında açıp kapatabilme.
-- **Medya Kütüphanesi**: `html2canvas` kullanarak paylaşmaya hazır Instagram Story kartları oluşturma ve indirme.
-- **Kimlik Doğrulamalı Erişim**: Ortam değişkenleri (.env) ile korunan güvenli giriş.
-- **Gelişmiş Kalıcılık**: Sunucu taraflı JSON depolama (`mes.json`) ile oturumlar arası veri senkronizasyonu.
+- **Bulut Gelen Kutusu**: Firebase Firestore üzerinde güvenli bir şekilde saklanan, IP takibi ve zaman damgalı anlık mesajlar.
+- **Firebase Authentication**: E-posta ve şifre kullanarak güvenli giriş. Maksimum güvenlik için kayıt ol özelliği devre dışıdır.
+- **Gelişmiş Kalıcılık**: Bulut tabanlı depolama, Vercel yeniden dağıtımları sırasında verilerinizin asla kaybolmamasını sağlar.
 
 ### 🛡️ Güvenlik
 
+- **Firebase Admin SDK**: Tüm admin işlemleri için sunucu tarafında token doğrulaması.
+- **Yetki Bazlı Güvenlik**: Erişim, yalnızca Firebase Console üzerinden manuel olarak eklenen kullanıcılarla sınırlıdır.
 - **Express Rate Limit**: Mesaj gönderim uç noktasında spam ve suistimali önler.
-- **Helmet Middleware**: XSS ve veri enjeksiyonuna karşı yapılandırılabilir CSP politikaları.
-- **IP Adli Takip**: Denetim amaçlı gönderici IP adreslerini yakalar ve saklar.
-- **Atomik Dosya Yazma**: Yüksek trafikli durumlarda veri bozulmasını önler.
 
 ## 🛠️ Teknoloji Yığını
 
-- **Frontend**: React 19, Vite, Framer Motion, Lucide React, html2canvas
-- **Backend**: Node.js, Express
-- **Depolama**: JSON Dosya Tabanlı Veritabanı (Atomik)
-- **Güvenlik**: Helmet, Express Rate Limit, CORS
+- **Frontend**: React 19, Vite, Framer Motion, Firebase Client SDK
+- **Backend**: Node.js, Express, Firebase Admin SDK (Vercel üzerinde Serverless)
+- **Depolama**: Firebase Firestore (NoSQL)
 
-## 📦 Kurulum ve Kurulum
+## 📦 Kurulum ve Dağıtım
 
-1. **Depoyu klonlayın:**
+1. **Klonla ve Yükle:**
 
    ```bash
    git clone https://github.com/kullaniciadi/ngl-core-audit.git
-   cd ngl-core-audit
-   ```
-
-2. **Bağımlılıkları yükleyin:**
-
-   ```bash
    npm install
    ```
 
-3. **Ortam Değişkenlerini Yapılandırın:**
-   Kök dizinde bir `.env` dosyası oluşturun:
+2. **Firebase Yapılandırması:**
+   [Firebase Kurulum Kılavuzu](./FirebaseKurulum.md) adımlarını izleyerek projenizi oluşturun.
 
-   ```env
-   VITE_ADMIN_USERNAME=admin_kullanici_adiniz
-   VITE_ADMIN_PASSWORD=guvenli_sifreniz
-   PORT=5001
-   ```
+3. **Ortam Değişkenlerini Ayarla:**
+   `.env.example` dosyasını temel alarak bir `.env` dosyası oluşturun ve Firebase anahtarlarınızı girin.
 
-4. **Uygulamayı çalıştırın:**
-   - **Full Stack Geliştirme**: `npm run dev:all` (Hem Vite'ı hem de Backend'i başlatır)
-   - **Sadece Frontend**: `npm run dev`
-   - **Sadece Backend**: `npm run server`
+4. **Vercel'e Dağıt:**
+   Kodunuzu GitHub'a yükleyin ve Vercel'e bağlayın. `.env` değişkenlerinizi Vercel Dashboard'una eklemeyi unutmayın.
 
 ## 📂 Proje Yapısı
 
 ```text
+├── api/              # Vercel Serverless Functions (Backend)
 ├── src/
 │   ├── pages/        # Gönderim sayfası, Giriş, Admin Paneli
-│   ├── components/   # UI bileşenleri (StoryCanvas vb.)
-│   └── main.jsx       # Giriş noktası
-├── server.js         # Node.js Express Backend
-├── mes.json          # Sunucu Taraflı Veri Kalıcılığı
+│   ├── components/   # UI bileşenleri
+│   └── lib/          # Firebase istemci yapılandırması
 ├── vite.config.js    # Proxy ve derleme yapılandırması
-└── .env              # Sırlar ve Yapılandırma
+└── vercel.json       # Dağıtım yapılandırması
 ```
 
 ## 📜 Lisans

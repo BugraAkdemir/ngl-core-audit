@@ -1,23 +1,31 @@
 import { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { motion } from 'framer-motion';
+import { signInWithEmailAndPassword } from 'firebase/auth';
+import { auth } from '../lib/firebase';
 
 export default function Login() {
-  const [username, setUsername] = useState('');
+  const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
   const [error, setError] = useState('');
+  const [loading, setLoading] = useState(false);
   const navigate = useNavigate();
 
-  const handleLogin = (e) => {
+  const handleLogin = async (e) => {
     e.preventDefault();
-    const adminUser = import.meta.env.VITE_ADMIN_USERNAME;
-    const adminPass = import.meta.env.VITE_ADMIN_PASSWORD;
+    setError('');
+    setLoading(true);
 
-    if (username === adminUser && password === adminPass) {
-      sessionStorage.setItem('admin_auth', 'true');
+    try {
+      const userCredential = await signInWithEmailAndPassword(auth, email, password);
+      const token = await userCredential.user.getIdToken();
+      sessionStorage.setItem('admin_token', token);
       navigate('/admin');
-    } else {
-      setError('Geçersiz kullanıcı adı veya şifre!');
+    } catch (err) {
+      console.error('Login error:', err);
+      setError('E-posta veya şifre hatalı!');
+    } finally {
+      setLoading(false);
     }
   };
 
@@ -36,10 +44,10 @@ export default function Login() {
         <form onSubmit={handleLogin} className="login-form">
           <div className="input-group">
             <input
-              type="text"
-              placeholder="Kullanıcı Adı"
-              value={username}
-              onChange={(e) => setUsername(e.target.value)}
+              type="email"
+              placeholder="E-posta"
+              value={email}
+              onChange={(e) => setEmail(e.target.value)}
               required
             />
           </div>
@@ -55,8 +63,8 @@ export default function Login() {
 
           {error && <p className="login-error">{error}</p>}
 
-          <button type="submit" className="ngl-button login-btn">
-            Giriş Yap
+          <button type="submit" className="ngl-button login-btn" disabled={loading}>
+            {loading ? 'Giriş Yapılıyor...' : 'Giriş Yap'}
           </button>
         </form>
       </motion.div>

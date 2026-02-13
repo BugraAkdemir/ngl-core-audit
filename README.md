@@ -15,66 +15,50 @@ A sophisticated full-stack anonymous messaging platform inspired by NGL.designed
 
 ### 🔐 For Admins (Secure Dashboard)
 
-- **Centralized Inbox**: Archived messages with IP tracking and timestamps.
-- **Real-time Settings**: Toggle Instagram verification requirements instantly across all sessions.
-- **Media Library**: Generate and download ready-to-share Instagram Story cards using `html2canvas`.
-- **Authenticated Access**: Secure login protected by environment variables.
-- **Advanced Persistence**: Server-side JSON storage (`mes.json`) ensures data synchronization across sessions.
+- **Cloud Inbox**: Real-time messages with IP tracking and timestamps, stored securely in Firebase Firestore.
+- **Firebase Authentication**: Secure login using Email & Password. Self-registration is disabled for maximum security.
+- **Advanced Persistence**: Cloud-based storage ensures your data is never lost during Vercel redeployments.
 
 ### 🛡️ Security
 
+- **Firebase Admin SDK**: Server-side token verification for all administrative actions.
+- **Role-Based Security**: Access is restricted to users manually added via the Firebase Console.
 - **Express Rate Limit**: Prevents spam on the messaging endpoint.
-- **Helmet Middleware**: Configurable CSP policies to protect against XSS and data injection.
-- **IP Forensic Tracking**: Captures and stores submitter IP addresses for audit purposes.
-- **Atomic File Writing**: Prevents data corruption on high-traffic instances.
 
 ## 🛠️ Tech Stack
 
-- **Frontend**: React 19, Vite, Framer Motion, Lucide React, html2canvas
-- **Backend**: Node.js, Express
-- **Storage**: JSON Flat-File Database (Atomic)
-- **Security**: Helmet, Express Rate Limit, CORS
+- **Frontend**: React 19, Vite, Framer Motion, Firebase Client SDK
+- **Backend**: Node.js, Express, Firebase Admin SDK (Serverless on Vercel)
+- **Storage**: Firebase Firestore (NoSQL)
 
-## 📦 Installation & Setup
+## 📦 Installation & Deployment
 
-1. **Clone the repository:**
+1. **Clone & Install:**
 
    ```bash
    git clone https://github.com/yourusername/ngl-core-audit.git
-   cd ngl-core-audit
-   ```
-
-2. **Install dependencies:**
-
-   ```bash
    npm install
    ```
 
-3. **Configure Environment Variables:**
-   Create a `.env` file in the root directory:
+2. **Configure Firebase:**
+   Follow the [Firebase Setup Guide](./FirebaseSetup.md) to create your project and get credentials.
 
-   ```env
-   VITE_ADMIN_USERNAME=your_admin_user
-   VITE_ADMIN_PASSWORD=your_secure_password
-   PORT=5001
-   ```
+3. **Set Environment Variables:**
+   Create a `.env` file based on `.env.example` and fill in your Firebase keys.
 
-4. **Run the application:**
-   - **Full Stack Development**: `npm run dev:all` (Starts both Vite and Backend)
-   - **Frontend Only**: `npm run dev`
-   - **Backend Only**: `npm run server`
+4. **Deploy to Vercel:**
+   Push your code to GitHub and connect it to Vercel. Don't forget to add your `.env` variables to the Vercel Dashboard.
 
 ## 📂 Project Structure
 
 ```text
+├── api/              # Vercel Serverless Functions (Backend)
 ├── src/
-│   ├── pages/        # Send page, Login, Admin Panel
-│   ├── components/   # UI components (StoryCanvas, etc.)
-│   └── main.jsx       # Entry point
-├── server.js         # Node.js Express Backend
-├── mes.json          # Server-side Data Persistence
+│   ├── pages/        # Send, Login, Admin Panel
+│   ├── components/   # UI components
+│   └── lib/          # Firebase client config
 ├── vite.config.js    # Proxy and build configuration
-└── .env              # Secrets and Configuration
+└── vercel.json       # Deployment configuration
 ```
 
 ## 📜 License

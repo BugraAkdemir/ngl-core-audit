@@ -1,4 +1,19 @@
-# Logs
+# Production Artifacts
+dist/
+dist-ssr/
+*.local
+
+# Dependencies
+node_modules/
+
+# Environment / Secrets
+.env
+.env.production
+.env.*.local
+*.json.tmp
+*.json.bak
+
+# Logs and Temp
 logs
 *.log
 npm-debug.log*
@@ -6,20 +21,15 @@ yarn-debug.log*
 yarn-error.log*
 pnpm-debug.log*
 lerna-debug.log*
+.vercel
 
-node_modules
-dist
-dist-ssr
-*.local
-
-# Editor directories and files
+# Editor
 .vscode/*
 !.vscode/extensions.json
-.idea
+.idea/
 .DS_Store
 *.suo
 *.ntvs*
 *.njsproj
 *.sln
 *.sw?
-.env

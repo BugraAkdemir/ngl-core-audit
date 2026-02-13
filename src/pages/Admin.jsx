@@ -15,9 +15,16 @@ export default function Admin() {
   const navigate = useNavigate();
   const storyRef = useRef(null);
 
+  const token = sessionStorage.getItem('admin_token');
+
+  useEffect(() => {
+    if (!token) {
+      navigate('/login');
+    }
+  }, [token, navigate]);
+
   const authHeaders = {
-    'x-admin-user': import.meta.env.VITE_ADMIN_USERNAME,
-    'x-admin-pass': import.meta.env.VITE_ADMIN_PASSWORD
+    'Authorization': `Bearer ${token}`
   };
 
   const fetchFullData = async () => {
@@ -256,7 +263,10 @@ export default function Admin() {
         </nav>
 
         <div className="sidebar-footer">
-          <button className="logout-btn" onClick={() => navigate('/')}>Dashboard'dan Çık</button>
+          <button className="logout-btn" onClick={() => {
+            sessionStorage.removeItem('admin_token');
+            navigate('/login');
+          }}>Çıkış Yap</button>
         </div>
       </header>
 
