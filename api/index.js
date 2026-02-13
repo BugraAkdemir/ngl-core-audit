@@ -10,51 +10,45 @@ dotenv.config();
 // Initialize Firebase Admin
 try {
     if (!admin.apps.length) {
-        let privateKey = process.env.FIREBASE_PRIVATE_KEY;
+        let credential;
 
-        if (privateKey) {
-            // Remove wrapping quotes if present
-            privateKey = privateKey.trim().replace(/^"|"$/g, '');
-            // Convert escaped newlines back to actual newlines
+        // Method 1: Full service account JSON (RECOMMENDED for Vercel)
+        if (process.env.FIREBASE_SERVICE_ACCOUNT_KEY) {
+            const serviceAccount = JSON.parse(process.env.FIREBASE_SERVICE_ACCOUNT_KEY);
+            credential = admin.credential.cert(serviceAccount);
+            console.log('Firebase: Using FIREBASE_SERVICE_ACCOUNT_KEY (JSON)');
+        }
+        // Method 2: Individual env vars (local development fallback)
+        else if (process.env.FIREBASE_PRIVATE_KEY) {
+            let privateKey = process.env.FIREBASE_PRIVATE_KEY;
             privateKey = privateKey.replace(/\\n/g, '\n');
-
-            // Fix for common PEM formatting issues (missing headers or extra whitespace)
-            if (!privateKey.includes('-----BEGIN PRIVATE KEY-----')) {
-                privateKey = `-----BEGIN PRIVATE KEY-----\n${privateKey}`;
-            }
-            if (!privateKey.includes('-----END PRIVATE KEY-----')) {
-                privateKey = `${privateKey}\n-----END PRIVATE KEY-----\n`;
-            }
+            credential = admin.credential.cert({
+                projectId: process.env.FIREBASE_PROJECT_ID,
+                clientEmail: process.env.FIREBASE_CLIENT_EMAIL,
+                privateKey: privateKey,
+            });
+            console.log('Firebase: Using individual env vars');
         }
 
-        if (!process.env.FIREBASE_PROJECT_ID || !process.env.FIREBASE_CLIENT_EMAIL || !privateKey) {
-            console.error('CRITICAL: Missing Firebase Environment Variables!', {
-                projectId: !!process.env.FIREBASE_PROJECT_ID,
-                clientEmail: !!process.env.FIREBASE_CLIENT_EMAIL,
-                privateKey: !!privateKey
-            });
-        } else {
-            admin.initializeApp({
-                credential: admin.credential.cert({
-                    projectId: process.env.FIREBASE_PROJECT_ID,
-                    clientEmail: process.env.FIREBASE_CLIENT_EMAIL,
-                    privateKey: privateKey,
-                }),
-            });
+        if (credential) {
+            admin.initializeApp({ credential });
             console.log('Firebase Admin initialized successfully');
+        } else {
+            console.error('CRITICAL: No Firebase credentials found!');
         }
     }
 } catch (error) {
     console.error('Firebase Admin Initialization Error:', error.stack || error.message);
 }
 
-// Global DB helper to avoid 'no default app' errors
+// Global DB helper
 const getDb = () => {
     if (!admin.apps.length) {
         throw new Error('Firebase Admin not initialized');
     }
     return admin.firestore();
 };
+
 const app = express();
 
 // Security middleware
@@ -75,7 +69,7 @@ app.use(express.json());
 
 // Rate limiting for message submission
 const messageLimiter = rateLimit({
-    windowMs: 15 * 60 * 1000, // 15 minutes
+    windowMs: 15 * 60 * 1000,
     max: 15,
     message: { error: 'Too many messages sent from this IP, please try again later.' }
 });
@@ -126,6 +120,7 @@ app.get('/api/settings', async (req, res) => {
         const settings = settingsDoc.exists ? settingsDoc.data() : { requireIg: true };
         res.json(settings);
     } catch (err) {
+        console.error('Settings Error:', err);
         res.status(500).json({ error: 'Database connection failed' });
     }
 });
@@ -152,8 +147,13 @@ app.post('/api/messages', messageLimiter, async (req, res) => {
 });
 
 app.get('/api/admin/data', authenticateAdmin, async (req, res) => {
-    const data = await fetchAllData();
-    res.json(data);
+    try {
+        const data = await fetchAllData();
+        res.json(data);
+    } catch (err) {
+        console.error('Admin Data Error:', err);
+        res.status(500).json({ error: 'Failed to fetch data' });
+    }
 });
 
 app.post('/api/admin/settings', authenticateAdmin, async (req, res) => {
@@ -163,6 +163,7 @@ app.post('/api/admin/settings', authenticateAdmin, async (req, res) => {
         await db.collection('config').doc('settings').set({ requireIg: !!requireIg }, { merge: true });
         res.json({ success: true });
     } catch (err) {
+        console.error('Settings Update Error:', err);
         res.status(500).json({ error: 'Failed to update settings' });
     }
 });
@@ -174,6 +175,7 @@ app.post('/api/admin/media', authenticateAdmin, async (req, res) => {
         await db.collection('media').add({ text, timestamp: timestamp || new Date().toISOString() });
         res.json({ success: true });
     } catch (err) {
+        console.error('Media Save Error:', err);
         res.status(500).json({ error: 'Failed to save media metadata' });
     }
 });

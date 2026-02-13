@@ -1,0 +1,1334 @@
+TimeUTC,timestampInMs,requestPath,requestMethod,requestQueryString,responseStatusCode,requestId,requestUserAgent,level,environment,branch,vercelCache,type,function,host,deploymentDomain,deploymentId,durationMs,region,maxMemoryUsed,memorySize,message,projectId,traceId,sessionId,invocationId,instanceId,concurrency
+2026-02-13 20: 13: 16,
+1771013596476,ngl-core-audit.vercel.app/api/messages,POST,
+,
+500,
+5cvcs-1771013596402-8a55c3fac942,
+"Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36",error,production,main,MISS,function,/api/index.js,ngl-core-audit.vercel.app,ngl-core-audit-6ck73yzo8-bugrs-projects.vercel.app,dpl_H2mC6cbEYCkfoaGPWT7EeQqwE89u,
+,
+,
+,
+,"Firestore Save Error: Error: Firebase Admin not initialized
+    at getDb (file: ///var/task/api/index.js:54:15)
+    at file: ///var/task/api/index.js:145:20
+    at Layer.handleRequest (/var/task/node_modules/router/lib/layer.js: 152: 17)
+    at next (/var/task/node_modules/router/lib/route.js: 157: 13)
+    at file: ///var/task/node_modules/express-rate-limit/dist/index.mjs:913:7
+    at process.processTicksAndRejections (node:internal/process/task_queues: 103: 5)
+    at async file: ///var/task/node_modules/express-rate-limit/dist/index.mjs:796:5",prj_xPKgyKHbO0AFBEYVbs3MbqoKDkC1,,,,,
+2026-02-13 20: 13: 16,
+1771013596402,ngl-core-audit.vercel.app/api/messages,POST,
+,
+500,
+5cvcs-1771013596402-8a55c3fac942,
+"Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36",
+,production,main,MISS,function,/api/index.js,ngl-core-audit.vercel.app,ngl-core-audit-6ck73yzo8-bugrs-projects.vercel.app,dpl_H2mC6cbEYCkfoaGPWT7EeQqwE89u,
+8,iad1,
+258,
+2048,
+,prj_xPKgyKHbO0AFBEYVbs3MbqoKDkC1,
+,
+,
+01KHCA5S8W4H0SA7EX9TA5N0GW,ugPmDmyR74lI,
+1
+2026-02-13 20: 13: 16,
+1771013596332,ngl-core-audit.vercel.app/api/messages,POST,
+,
+500,
+5cvcs-1771013596266-9fe0da5babe8,
+"Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36",error,production,main,MISS,function,/api/index.js,ngl-core-audit.vercel.app,ngl-core-audit-6ck73yzo8-bugrs-projects.vercel.app,dpl_H2mC6cbEYCkfoaGPWT7EeQqwE89u,
+,
+,
+,
+,"Firestore Save Error: Error: Firebase Admin not initialized
+    at getDb (file: ///var/task/api/index.js:54:15)
+    at file: ///var/task/api/index.js:145:20
+    at Layer.handleRequest (/var/task/node_modules/router/lib/layer.js: 152: 17)
+    at next (/var/task/node_modules/router/lib/route.js: 157: 13)
+    at file: ///var/task/node_modules/express-rate-limit/dist/index.mjs:913:7
+    at process.processTicksAndRejections (node:internal/process/task_queues: 103: 5)
+    at async file: ///var/task/node_modules/express-rate-limit/dist/index.mjs:796:5",prj_xPKgyKHbO0AFBEYVbs3MbqoKDkC1,,,,,
+2026-02-13 20: 13: 16,
+1771013596266,ngl-core-audit.vercel.app/api/messages,POST,
+,
+500,
+5cvcs-1771013596266-9fe0da5babe8,
+"Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36",
+,production,main,MISS,function,/api/index.js,ngl-core-audit.vercel.app,ngl-core-audit-6ck73yzo8-bugrs-projects.vercel.app,dpl_H2mC6cbEYCkfoaGPWT7EeQqwE89u,
+6,iad1,
+258,
+2048,
+,prj_xPKgyKHbO0AFBEYVbs3MbqoKDkC1,
+,
+,
+01KHCA5S4PWA7B0AYRRY9TG9SF,ugPmDmyR74lI,
+1
+2026-02-13 20: 13: 16,
+1771013596194,ngl-core-audit.vercel.app/api/messages,POST,
+,
+500,j4x5h-1771013596123-533262d4af5d,
+"Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36",error,production,main,MISS,function,/api/index.js,ngl-core-audit.vercel.app,ngl-core-audit-6ck73yzo8-bugrs-projects.vercel.app,dpl_H2mC6cbEYCkfoaGPWT7EeQqwE89u,
+,
+,
+,
+,"Firestore Save Error: Error: Firebase Admin not initialized
+    at getDb (file: ///var/task/api/index.js:54:15)
+    at file: ///var/task/api/index.js:145:20
+    at Layer.handleRequest (/var/task/node_modules/router/lib/layer.js: 152: 17)
+    at next (/var/task/node_modules/router/lib/route.js: 157: 13)
+    at file: ///var/task/node_modules/express-rate-limit/dist/index.mjs:913:7
+    at process.processTicksAndRejections (node:internal/process/task_queues: 103: 5)
+    at async file: ///var/task/node_modules/express-rate-limit/dist/index.mjs:796:5",prj_xPKgyKHbO0AFBEYVbs3MbqoKDkC1,,,,,
+2026-02-13 20: 13: 16,
+1771013596123,ngl-core-audit.vercel.app/api/messages,POST,
+,
+500,j4x5h-1771013596123-533262d4af5d,
+"Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36",
+,production,main,MISS,function,/api/index.js,ngl-core-audit.vercel.app,ngl-core-audit-6ck73yzo8-bugrs-projects.vercel.app,dpl_H2mC6cbEYCkfoaGPWT7EeQqwE89u,
+7,iad1,
+257,
+2048,
+,prj_xPKgyKHbO0AFBEYVbs3MbqoKDkC1,
+,
+,
+01KHCA5S07YYMT9Y9Y20K79XZE,ugPmDmyR74lI,
+1
+2026-02-13 20: 13: 16,
+1771013596057,ngl-core-audit.vercel.app/api/messages,POST,
+,
+500,f2xmf-1771013595987-dea42d5f8ce0,
+"Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36",error,production,main,MISS,function,/api/index.js,ngl-core-audit.vercel.app,ngl-core-audit-6ck73yzo8-bugrs-projects.vercel.app,dpl_H2mC6cbEYCkfoaGPWT7EeQqwE89u,
+,
+,
+,
+,"Firestore Save Error: Error: Firebase Admin not initialized
+    at getDb (file: ///var/task/api/index.js:54:15)
+    at file: ///var/task/api/index.js:145:20
+    at Layer.handleRequest (/var/task/node_modules/router/lib/layer.js: 152: 17)
+    at next (/var/task/node_modules/router/lib/route.js: 157: 13)
+    at file: ///var/task/node_modules/express-rate-limit/dist/index.mjs:913:7
+    at process.processTicksAndRejections (node:internal/process/task_queues: 103: 5)
+    at async file: ///var/task/node_modules/express-rate-limit/dist/index.mjs:796:5",prj_xPKgyKHbO0AFBEYVbs3MbqoKDkC1,,,,,
+2026-02-13 20: 13: 15,
+1771013595987,ngl-core-audit.vercel.app/api/messages,POST,
+,
+500,f2xmf-1771013595987-dea42d5f8ce0,
+"Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36",
+,production,main,MISS,function,/api/index.js,ngl-core-audit.vercel.app,ngl-core-audit-6ck73yzo8-bugrs-projects.vercel.app,dpl_H2mC6cbEYCkfoaGPWT7EeQqwE89u,
+6,iad1,
+257,
+2048,
+,prj_xPKgyKHbO0AFBEYVbs3MbqoKDkC1,
+,
+,
+01KHCA5RWB9RW14RXYSVAD4DYP,ugPmDmyR74lI,
+1
+2026-02-13 20: 13: 15,
+1771013595902,ngl-core-audit.vercel.app/api/messages,POST,
+,
+500,xjffz-1771013595837-5ee6397090d9,
+"Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36",error,production,main,MISS,function,/api/index.js,ngl-core-audit.vercel.app,ngl-core-audit-6ck73yzo8-bugrs-projects.vercel.app,dpl_H2mC6cbEYCkfoaGPWT7EeQqwE89u,
+,
+,
+,
+,"Firestore Save Error: Error: Firebase Admin not initialized
+    at getDb (file: ///var/task/api/index.js:54:15)
+    at file: ///var/task/api/index.js:145:20
+    at Layer.handleRequest (/var/task/node_modules/router/lib/layer.js: 152: 17)
+    at next (/var/task/node_modules/router/lib/route.js: 157: 13)
+    at file: ///var/task/node_modules/express-rate-limit/dist/index.mjs:913:7
+    at process.processTicksAndRejections (node:internal/process/task_queues: 103: 5)
+    at async file: ///var/task/node_modules/express-rate-limit/dist/index.mjs:796:5",prj_xPKgyKHbO0AFBEYVbs3MbqoKDkC1,,,,,
+2026-02-13 20: 13: 15,
+1771013595837,ngl-core-audit.vercel.app/api/messages,POST,
+,
+500,xjffz-1771013595837-5ee6397090d9,
+"Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36",
+,production,main,MISS,function,/api/index.js,ngl-core-audit.vercel.app,ngl-core-audit-6ck73yzo8-bugrs-projects.vercel.app,dpl_H2mC6cbEYCkfoaGPWT7EeQqwE89u,
+8,iad1,
+257,
+2048,
+,prj_xPKgyKHbO0AFBEYVbs3MbqoKDkC1,
+,
+,
+01KHCA5RQ8Z22CZJ23BX5T455S,ugPmDmyR74lI,
+1
+2026-02-13 20: 13: 15,
+1771013595863,ngl-core-audit.vercel.app/api/messages,POST,
+,
+500,dxsbx-1771013595690-01c8cbad9189,
+"Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36",error,production,main,MISS,function,/api/index.js,ngl-core-audit.vercel.app,ngl-core-audit-6ck73yzo8-bugrs-projects.vercel.app,dpl_H2mC6cbEYCkfoaGPWT7EeQqwE89u,
+,
+,
+,
+,"Firestore Save Error: Error: Firebase Admin not initialized
+    at getDb (file: ///var/task/api/index.js:54:15)
+    at file: ///var/task/api/index.js:145:20
+    at Layer.handleRequest (/var/task/node_modules/router/lib/layer.js: 152: 17)
+    at next (/var/task/node_modules/router/lib/route.js: 157: 13)
+    at file: ///var/task/node_modules/express-rate-limit/dist/index.mjs:913:7
+    at process.processTicksAndRejections (node:internal/process/task_queues: 103: 5)
+    at async file: ///var/task/node_modules/express-rate-limit/dist/index.mjs:796:5",prj_xPKgyKHbO0AFBEYVbs3MbqoKDkC1,,,,,
+2026-02-13 20: 13: 15,
+1771013595690,ngl-core-audit.vercel.app/api/messages,POST,
+,
+500,dxsbx-1771013595690-01c8cbad9189,
+"Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36",
+,production,main,MISS,function,/api/index.js,ngl-core-audit.vercel.app,ngl-core-audit-6ck73yzo8-bugrs-projects.vercel.app,dpl_H2mC6cbEYCkfoaGPWT7EeQqwE89u,
+6,iad1,
+257,
+2048,
+,prj_xPKgyKHbO0AFBEYVbs3MbqoKDkC1,
+,
+,
+01KHCA5RP4NG0BJ1RNDYJ4KP0T,ugPmDmyR74lI,
+1
+2026-02-13 20: 13: 14,
+1771013594839,ngl-core-audit.vercel.app/api/messages,POST,
+,
+500,
+7fpp2-1771013594780-2bb0b29f5de5,
+"Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36",error,production,main,MISS,function,/api/index.js,ngl-core-audit.vercel.app,ngl-core-audit.vercel.app,dpl_H2mC6cbEYCkfoaGPWT7EeQqwE89u,
+,
+,
+,
+,"Firestore Save Error: Error: Firebase Admin not initialized
+    at getDb (file: ///var/task/api/index.js:54:15)
+    at file: ///var/task/api/index.js:145:20
+    at Layer.handleRequest (/var/task/node_modules/router/lib/layer.js: 152: 17)
+    at next (/var/task/node_modules/router/lib/route.js: 157: 13)
+    at file: ///var/task/node_modules/express-rate-limit/dist/index.mjs:913:7
+    at process.processTicksAndRejections (node:internal/process/task_queues: 103: 5)
+    at async file: ///var/task/node_modules/express-rate-limit/dist/index.mjs:796:5",prj_xPKgyKHbO0AFBEYVbs3MbqoKDkC1,,,,,
+2026-02-13 20: 13: 14,
+1771013594780,ngl-core-audit.vercel.app/api/messages,POST,
+,
+500,
+7fpp2-1771013594780-2bb0b29f5de5,
+"Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36",
+,production,main,MISS,function,/api/index.js,ngl-core-audit.vercel.app,ngl-core-audit.vercel.app,dpl_H2mC6cbEYCkfoaGPWT7EeQqwE89u,
+8,iad1,
+266,
+2048,
+,prj_xPKgyKHbO0AFBEYVbs3MbqoKDkC1,
+,
+,
+01KHCA5QP7E1YTC7QS3NF3KQXF,ugPmDmyR74lI,
+1
+2026-02-13 20: 13: 13,
+1771013593085,ngl-core-audit.vercel.app/api/settings,GET,
+,
+500,xjffz-1771013593085-ce61b1a6f76f,
+"Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36",
+,production,main,MISS,function,/api/index.js,ngl-core-audit.vercel.app,ngl-core-audit-6ck73yzo8-bugrs-projects.vercel.app,dpl_H2mC6cbEYCkfoaGPWT7EeQqwE89u,
+14,iad1,
+266,
+2048,
+,prj_xPKgyKHbO0AFBEYVbs3MbqoKDkC1,
+,
+,
+01KHCA5P1F2MB19R66880FBRBZ,ugPmDmyR74lI,
+1
+2026-02-13 20: 13: 01,
+1771013581898,ngl-core-audit.vercel.app/api/settings,GET,
+,
+500,
+4mkb7-1771013581898-d58834e6f865,
+"Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36",
+,production,main,MISS,function,/api/index.js,ngl-core-audit.vercel.app,ngl-core-audit-6ck73yzo8-bugrs-projects.vercel.app,dpl_H2mC6cbEYCkfoaGPWT7EeQqwE89u,
+31,iad1,
+265,
+2048,
+,prj_xPKgyKHbO0AFBEYVbs3MbqoKDkC1,
+,
+,
+01KHCA5B3MPVS45ZC3RKFK3HYB,ugPmDmyR74lI,
+1
+2026-02-13 20: 12: 59,
+1771013579429,ngl-core-audit.vercel.app/api/admin/data,GET,
+,
+401,w8f8m-1771013579027-2ea6e496a24d,Mozilla/5.0 (X11; Linux x86_64; rv: 147.0) Gecko/20100101 Firefox/147.0,error,production,main,BYPASS,function,/api/index.js,ngl-core-audit.vercel.app,ngl-core-audit.vercel.app,dpl_H2mC6cbEYCkfoaGPWT7EeQqwE89u,
+,
+,
+,
+,"Auth Error: FirebaseAppError: The default Firebase app does not exist. Make sure you call initializeApp() before using any of the Firebase services.
+    at AppStore.getApp (/var/task/node_modules/firebase-admin/lib/app/lifecycle.js: 79: 19)
+    at FirebaseNamespaceInternals.app (/var/task/node_modules/firebase-admin/lib/app/firebase-namespace.js: 54: 35)
+    at FirebaseNamespace.app (/var/task/node_modules/firebase-admin/lib/app/firebase-namespace.js: 256: 30)
+    at FirebaseNamespace.ensureApp (/var/task/node_modules/firebase-admin/lib/app/firebase-namespace.js: 266: 24)
+    at FirebaseNamespace.fn (/var/task/node_modules/firebase-admin/lib/app/firebase-namespace.js: 92: 25)
+    at authenticateAdmin (file: ///var/task/api/index.js:92:42)
+    at Layer.handleRequest (/var/task/node_modules/router/lib/layer.js: 152: 17)
+    at next (/var/task/node_modules/router/lib/route.js: 157: 13)
+    at Route.dispatch (/var/task/node_modules/router/lib/route.js: 117: 3)
+    at handle (/var/task/node_modules/router/index.js: 435: 11) {
+  errorInfo: {
+    code: 'app/no-app',
+    message: 'The default Firebase app does not exist. Make sure you call initializeApp() before using any of the Firebase services.'
+    },
+  codePrefix: 'app'
+}",prj_xPKgyKHbO0AFBEYVbs3MbqoKDkC1,,,,,2026-02-13 20: 12: 59,
+1771013579027,ngl-core-audit.vercel.app/api/admin/data,GET,
+,
+401,w8f8m-1771013579027-2ea6e496a24d,Mozilla/5.0 (X11; Linux x86_64; rv: 147.0) Gecko/20100101 Firefox/147.0,
+,production,main,BYPASS,function,/api/index.js,ngl-core-audit.vercel.app,ngl-core-audit.vercel.app,dpl_H2mC6cbEYCkfoaGPWT7EeQqwE89u,
+126,iad1,
+264,
+2048,
+,prj_xPKgyKHbO0AFBEYVbs3MbqoKDkC1,
+,
+,
+01KHCA58GSCRJ74VJKENS8YETW,ugPmDmyR74lI,
+1
+2026-02-13 20: 12: 59,
+1771013579027,ngl-core-audit.vercel.app/api/admin/data,GET,
+,
+401,w8f8m-1771013579027-2ea6e496a24d,Mozilla/5.0 (X11; Linux x86_64; rv: 147.0) Gecko/20100101 Firefox/147.0,
+,production,main,BYPASS,static,/api/index.js,ngl-core-audit.vercel.app,ngl-core-audit.vercel.app,dpl_H2mC6cbEYCkfoaGPWT7EeQqwE89u,
+450,fra1,
+,
+,
+,prj_xPKgyKHbO0AFBEYVbs3MbqoKDkC1,
+,
+,
+,
+,
+2026-02-13 20: 12: 53,
+1771013573807,ngl-core-audit.vercel.app/api/messages,POST,
+,
+500,
+4mkb7-1771013573741-ff167758a1c7,
+"Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36",error,production,main,MISS,function,/api/index.js,ngl-core-audit.vercel.app,ngl-core-audit-6ck73yzo8-bugrs-projects.vercel.app,dpl_H2mC6cbEYCkfoaGPWT7EeQqwE89u,
+,
+,
+,
+,"Firestore Save Error: Error: Firebase Admin not initialized
+    at getDb (file: ///var/task/api/index.js:54:15)
+    at file: ///var/task/api/index.js:145:20
+    at Layer.handleRequest (/var/task/node_modules/router/lib/layer.js: 152: 17)
+    at next (/var/task/node_modules/router/lib/route.js: 157: 13)
+    at file: ///var/task/node_modules/express-rate-limit/dist/index.mjs:913:7
+    at process.processTicksAndRejections (node:internal/process/task_queues: 103: 5)
+    at async file: ///var/task/node_modules/express-rate-limit/dist/index.mjs:796:5",prj_xPKgyKHbO0AFBEYVbs3MbqoKDkC1,,,,,
+2026-02-13 20: 12: 53,
+1771013573741,ngl-core-audit.vercel.app/api/messages,POST,
+,
+500,
+4mkb7-1771013573741-ff167758a1c7,
+"Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36",
+,production,main,MISS,function,/api/index.js,ngl-core-audit.vercel.app,ngl-core-audit-6ck73yzo8-bugrs-projects.vercel.app,dpl_H2mC6cbEYCkfoaGPWT7EeQqwE89u,
+6,iad1,
+258,
+2048,
+,prj_xPKgyKHbO0AFBEYVbs3MbqoKDkC1,
+,
+,
+01KHCA534RXW85W4XR6NXGCZZA,ugPmDmyR74lI,
+1
+2026-02-13 20: 12: 53,
+1771013573766,ngl-core-audit.vercel.app/api/messages,POST,
+,
+500,
+2ntpc-1771013573596-b4f312f26bcc,
+"Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36",error,production,main,MISS,function,/api/index.js,ngl-core-audit.vercel.app,ngl-core-audit-6ck73yzo8-bugrs-projects.vercel.app,dpl_H2mC6cbEYCkfoaGPWT7EeQqwE89u,
+,
+,
+,
+,"Firestore Save Error: Error: Firebase Admin not initialized
+    at getDb (file: ///var/task/api/index.js:54:15)
+    at file: ///var/task/api/index.js:145:20
+    at Layer.handleRequest (/var/task/node_modules/router/lib/layer.js: 152: 17)
+    at next (/var/task/node_modules/router/lib/route.js: 157: 13)
+    at file: ///var/task/node_modules/express-rate-limit/dist/index.mjs:913:7
+    at process.processTicksAndRejections (node:internal/process/task_queues: 103: 5)
+    at async file: ///var/task/node_modules/express-rate-limit/dist/index.mjs:796:5",prj_xPKgyKHbO0AFBEYVbs3MbqoKDkC1,,,,,
+2026-02-13 20: 12: 53,
+1771013573596,ngl-core-audit.vercel.app/api/messages,POST,
+,
+500,
+2ntpc-1771013573596-b4f312f26bcc,
+"Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36",
+,production,main,MISS,function,/api/index.js,ngl-core-audit.vercel.app,ngl-core-audit-6ck73yzo8-bugrs-projects.vercel.app,dpl_H2mC6cbEYCkfoaGPWT7EeQqwE89u,
+12,iad1,
+258,
+2048,
+,prj_xPKgyKHbO0AFBEYVbs3MbqoKDkC1,
+,
+,
+01KHCA530793FQ0QKSYWR3RR7J,ugPmDmyR74lI,
+1
+2026-02-13 20: 12: 53,
+1771013573707,ngl-core-audit.vercel.app/api/messages,POST,
+,
+500,zgff9-1771013572952-5d1931bb1df8,
+"Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36",info,production,main,MISS,function,/api/index.js,ngl-core-audit.vercel.app,ngl-core-audit-6ck73yzo8-bugrs-projects.vercel.app,dpl_H2mC6cbEYCkfoaGPWT7EeQqwE89u,
+,
+,
+,
+,
+[dotenv@17.3.1
+] injecting env (0) from .env -- tip: ⚙️  enable debug logging with { debug: true
+},prj_xPKgyKHbO0AFBEYVbs3MbqoKDkC1,
+,
+,
+,
+,
+2026-02-13 20: 12: 53,
+1771013573707,ngl-core-audit.vercel.app/api/messages,POST,
+,
+500,zgff9-1771013572952-5d1931bb1df8,
+"Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36",info,production,main,MISS,function,/api/index.js,ngl-core-audit.vercel.app,ngl-core-audit-6ck73yzo8-bugrs-projects.vercel.app,dpl_H2mC6cbEYCkfoaGPWT7EeQqwE89u,
+,
+,
+,
+,"Firebase Admin Initialization Error: Error: Failed to parse private key: Error: Invalid PEM formatted message.
+    at new ServiceAccount (/var/task/node_modules/firebase-admin/lib/app/credential-internal.js: 182: 19)
+    at new ServiceAccountCredential (/var/task/node_modules/firebase-admin/lib/app/credential-internal.js: 118: 15)
+    at Object.cert (/var/task/node_modules/firebase-admin/lib/app/credential-factory.js: 105: 54)
+    at file: ///var/task/api/index.js:38:46
+    at ModuleJob.run (node:internal/modules/esm/module_job: 413: 25)
+    at process.processTicksAndRejections (node:internal/process/task_queues: 103: 5)
+    at async onImport.tracePromise.__proto__ (node:internal/modules/esm/loader: 660: 26)
+    at async d (/opt/rust/nodejs.js: 17: 25028)",prj_xPKgyKHbO0AFBEYVbs3MbqoKDkC1,,,,,2026-02-13 20: 12: 53,
+1771013573731,ngl-core-audit.vercel.app/api/messages,POST,
+,
+500,zgff9-1771013572952-5d1931bb1df8,
+"Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36",error,production,main,MISS,function,/api/index.js,ngl-core-audit.vercel.app,ngl-core-audit-6ck73yzo8-bugrs-projects.vercel.app,dpl_H2mC6cbEYCkfoaGPWT7EeQqwE89u,
+,
+,
+,
+,"ValidationError: The 'X-Forwarded-For' header is set but the Express 'trust proxy' setting is false (default). This could indicate a misconfiguration which would prevent express-rate-limit from accurately identifying users. See https://express-rate-limit.github.io/ERR_ERL_UNEXPECTED_X_FORWARDED_FOR/ for more information.
+    at Object.xForwardedForHeader (file: ///var/task/node_modules/express-rate-limit/dist/index.mjs:337:13)
+    at wrappedValidations.<computed> [as xForwardedForHeader
+] (file: ///var/task/node_modules/express-rate-limit/dist/index.mjs:651:22)
+    at Object.keyGenerator (file: ///var/task/node_modules/express-rate-limit/dist/index.mjs:754:20)
+    at file: ///var/task/node_modules/express-rate-limit/dist/index.mjs:815:32
+    at process.processTicksAndRejections (node:internal/process/task_queues: 103: 5)
+    at async file: ///var/task/node_modules/express-rate-limit/dist/index.mjs:796:5 {
+  code: 'ERR_ERL_UNEXPECTED_X_FORWARDED_FOR',
+  help: 'https: //express-rate-limit.github.io/ERR_ERL_UNEXPECTED_X_FORWARDED_FOR/'
+}",prj_xPKgyKHbO0AFBEYVbs3MbqoKDkC1,,,,,2026-02-13 20: 12: 53,
+1771013573731,ngl-core-audit.vercel.app/api/messages,POST,
+,
+500,zgff9-1771013572952-5d1931bb1df8,
+"Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36",error,production,main,MISS,function,/api/index.js,ngl-core-audit.vercel.app,ngl-core-audit-6ck73yzo8-bugrs-projects.vercel.app,dpl_H2mC6cbEYCkfoaGPWT7EeQqwE89u,
+,
+,
+,
+,"ValidationError: The 'Forwarded' header (standardized X-Forwarded-For) is set but currently being ignored. Add a custom keyGenerator to use a value from this header. See https://express-rate-limit.github.io/ERR_ERL_FORWARDED_HEADER/ for more information.
+    at Object.forwardedHeader (file: ///var/task/node_modules/express-rate-limit/dist/index.mjs:352:13)
+    at wrappedValidations.<computed> [as forwardedHeader
+] (file: ///var/task/node_modules/express-rate-limit/dist/index.mjs:651:22)
+    at Object.keyGenerator (file: ///var/task/node_modules/express-rate-limit/dist/index.mjs:755:20)
+    at file: ///var/task/node_modules/express-rate-limit/dist/index.mjs:815:32
+    at process.processTicksAndRejections (node:internal/process/task_queues: 103: 5)
+    at async file: ///var/task/node_modules/express-rate-limit/dist/index.mjs:796:5 {
+  code: 'ERR_ERL_FORWARDED_HEADER',
+  help: 'https: //express-rate-limit.github.io/ERR_ERL_FORWARDED_HEADER/'
+}",prj_xPKgyKHbO0AFBEYVbs3MbqoKDkC1,,,,,2026-02-13 20: 12: 53,
+1771013573736,ngl-core-audit.vercel.app/api/messages,POST,
+,
+500,zgff9-1771013572952-5d1931bb1df8,
+"Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36",error,production,main,MISS,function,/api/index.js,ngl-core-audit.vercel.app,ngl-core-audit-6ck73yzo8-bugrs-projects.vercel.app,dpl_H2mC6cbEYCkfoaGPWT7EeQqwE89u,
+,
+,
+,
+,"Firestore Save Error: Error: Firebase Admin not initialized
+    at getDb (file: ///var/task/api/index.js:54:15)
+    at file: ///var/task/api/index.js:145:20
+    at Layer.handleRequest (/var/task/node_modules/router/lib/layer.js: 152: 17)
+    at next (/var/task/node_modules/router/lib/route.js: 157: 13)
+    at file: ///var/task/node_modules/express-rate-limit/dist/index.mjs:913:7
+    at process.processTicksAndRejections (node:internal/process/task_queues: 103: 5)
+    at async file: ///var/task/node_modules/express-rate-limit/dist/index.mjs:796:5",prj_xPKgyKHbO0AFBEYVbs3MbqoKDkC1,,,,,
+2026-02-13 20: 12: 52,
+1771013572952,ngl-core-audit.vercel.app/api/messages,POST,
+,
+500,zgff9-1771013572952-5d1931bb1df8,
+"Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36",
+,production,main,MISS,function,/api/index.js,ngl-core-audit.vercel.app,ngl-core-audit-6ck73yzo8-bugrs-projects.vercel.app,dpl_H2mC6cbEYCkfoaGPWT7EeQqwE89u,
+505,iad1,
+255,
+2048,
+,prj_xPKgyKHbO0AFBEYVbs3MbqoKDkC1,
+,
+,
+01KHCA52C59AW1DBE2FCCAT1AW,ugPmDmyR74lI,
+1
+2026-02-13 20: 12: 50,
+1771013570655,ngl-core-audit.vercel.app/api/messages,POST,
+,
+500,
+2ntpc-1771013570569-7bb0f33c8707,
+"Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36",error,production,main,MISS,function,/api/index.js,ngl-core-audit.vercel.app,ngl-core-audit.vercel.app,dpl_H2mC6cbEYCkfoaGPWT7EeQqwE89u,
+,
+,
+,
+,"ValidationError: The 'X-Forwarded-For' header is set but the Express 'trust proxy' setting is false (default). This could indicate a misconfiguration which would prevent express-rate-limit from accurately identifying users. See https://express-rate-limit.github.io/ERR_ERL_UNEXPECTED_X_FORWARDED_FOR/ for more information.
+    at Object.xForwardedForHeader (file: ///var/task/node_modules/express-rate-limit/dist/index.mjs:337:13)
+    at wrappedValidations.<computed> [as xForwardedForHeader
+] (file: ///var/task/node_modules/express-rate-limit/dist/index.mjs:651:22)
+    at Object.keyGenerator (file: ///var/task/node_modules/express-rate-limit/dist/index.mjs:754:20)
+    at file: ///var/task/node_modules/express-rate-limit/dist/index.mjs:815:32
+    at process.processTicksAndRejections (node:internal/process/task_queues: 103: 5)
+    at async file: ///var/task/node_modules/express-rate-limit/dist/index.mjs:796:5 {
+  code: 'ERR_ERL_UNEXPECTED_X_FORWARDED_FOR',
+  help: 'https: //express-rate-limit.github.io/ERR_ERL_UNEXPECTED_X_FORWARDED_FOR/'
+}",prj_xPKgyKHbO0AFBEYVbs3MbqoKDkC1,,,,,2026-02-13 20: 12: 50,
+1771013570655,ngl-core-audit.vercel.app/api/messages,POST,
+,
+500,
+2ntpc-1771013570569-7bb0f33c8707,
+"Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36",error,production,main,MISS,function,/api/index.js,ngl-core-audit.vercel.app,ngl-core-audit.vercel.app,dpl_H2mC6cbEYCkfoaGPWT7EeQqwE89u,
+,
+,
+,
+,"ValidationError: The 'Forwarded' header (standardized X-Forwarded-For) is set but currently being ignored. Add a custom keyGenerator to use a value from this header. See https://express-rate-limit.github.io/ERR_ERL_FORWARDED_HEADER/ for more information.
+    at Object.forwardedHeader (file: ///var/task/node_modules/express-rate-limit/dist/index.mjs:352:13)
+    at wrappedValidations.<computed> [as forwardedHeader
+] (file: ///var/task/node_modules/express-rate-limit/dist/index.mjs:651:22)
+    at Object.keyGenerator (file: ///var/task/node_modules/express-rate-limit/dist/index.mjs:755:20)
+    at file: ///var/task/node_modules/express-rate-limit/dist/index.mjs:815:32
+    at process.processTicksAndRejections (node:internal/process/task_queues: 103: 5)
+    at async file: ///var/task/node_modules/express-rate-limit/dist/index.mjs:796:5 {
+  code: 'ERR_ERL_FORWARDED_HEADER',
+  help: 'https: //express-rate-limit.github.io/ERR_ERL_FORWARDED_HEADER/'
+}",prj_xPKgyKHbO0AFBEYVbs3MbqoKDkC1,,,,,2026-02-13 20: 12: 50,
+1771013570658,ngl-core-audit.vercel.app/api/messages,POST,
+,
+500,
+2ntpc-1771013570569-7bb0f33c8707,
+"Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36",error,production,main,MISS,function,/api/index.js,ngl-core-audit.vercel.app,ngl-core-audit.vercel.app,dpl_H2mC6cbEYCkfoaGPWT7EeQqwE89u,
+,
+,
+,
+,"Firestore Save Error: Error: Firebase Admin not initialized
+    at getDb (file: ///var/task/api/index.js:54:15)
+    at file: ///var/task/api/index.js:145:20
+    at Layer.handleRequest (/var/task/node_modules/router/lib/layer.js: 152: 17)
+    at next (/var/task/node_modules/router/lib/route.js: 157: 13)
+    at file: ///var/task/node_modules/express-rate-limit/dist/index.mjs:913:7
+    at process.processTicksAndRejections (node:internal/process/task_queues: 103: 5)
+    at async file: ///var/task/node_modules/express-rate-limit/dist/index.mjs:796:5",prj_xPKgyKHbO0AFBEYVbs3MbqoKDkC1,,,,,
+2026-02-13 20: 12: 50,
+1771013570569,ngl-core-audit.vercel.app/api/messages,POST,
+,
+500,
+2ntpc-1771013570569-7bb0f33c8707,
+"Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36",
+,production,main,MISS,function,/api/index.js,ngl-core-audit.vercel.app,ngl-core-audit.vercel.app,dpl_H2mC6cbEYCkfoaGPWT7EeQqwE89u,
+21,iad1,
+272,
+2048,
+,prj_xPKgyKHbO0AFBEYVbs3MbqoKDkC1,
+,
+,
+01KHCA50209JYX3QJXN7G5HSVG,DaE1tlROeAvq,
+1
+2026-02-13 20: 12: 48,
+1771013568452,ngl-core-audit.vercel.app/api/settings,GET,
+,
+500,gn77j-1771013568452-bf3ab5a8029c,
+"Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36",
+,production,main,MISS,function,/api/index.js,ngl-core-audit.vercel.app,ngl-core-audit-6ck73yzo8-bugrs-projects.vercel.app,dpl_H2mC6cbEYCkfoaGPWT7EeQqwE89u,
+7,iad1,
+272,
+2048,
+,prj_xPKgyKHbO0AFBEYVbs3MbqoKDkC1,
+,
+,
+01KHCA4XZJ8G9BZMR8ZG180C9P,DaE1tlROeAvq,
+1
+2026-02-13 20: 12: 47,
+1771013567715,ngl-core-audit.vercel.app/api/settings,GET,
+,
+500,xjffz-1771013567715-4af27addf9e3,
+"Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36",
+,production,main,MISS,function,/api/index.js,ngl-core-audit.vercel.app,ngl-core-audit-6ck73yzo8-bugrs-projects.vercel.app,dpl_H2mC6cbEYCkfoaGPWT7EeQqwE89u,
+8,iad1,
+272,
+2048,
+,prj_xPKgyKHbO0AFBEYVbs3MbqoKDkC1,
+,
+,
+01KHCA4XCAJ6XBZGZ9ZRZEM8Y9,DaE1tlROeAvq,
+1
+2026-02-13 20: 12: 46,
+1771013566370,ngl-core-audit.vercel.app/api/settings,GET,
+,
+500,rh5r9-1771013566370-07efd0c7d6db,
+"Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36",
+,production,main,MISS,function,/api/index.js,ngl-core-audit.vercel.app,ngl-core-audit-6ck73yzo8-bugrs-projects.vercel.app,dpl_H2mC6cbEYCkfoaGPWT7EeQqwE89u,
+7,iad1,
+272,
+2048,
+,prj_xPKgyKHbO0AFBEYVbs3MbqoKDkC1,
+,
+,
+01KHCA4W5D9PXFE6E7D77WCR3X,DaE1tlROeAvq,
+1
+2026-02-13 20: 12: 44,
+1771013564732,ngl-core-audit-6ck73yzo8-bugrs-projects.vercel.app/api/settings,GET,
+,
+500,tnttw-1771013564732-084f8479b120,
+"Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/141.0.7390.0 Safari/537.36",
+,production,main,MISS,function,/api/index.js,ngl-core-audit-6ck73yzo8-bugrs-projects.vercel.app,ngl-core-audit-6ck73yzo8-bugrs-projects.vercel.app,dpl_H2mC6cbEYCkfoaGPWT7EeQqwE89u,
+6,iad1,
+272,
+2048,
+,prj_xPKgyKHbO0AFBEYVbs3MbqoKDkC1,
+,
+,
+01KHCA4TAY36F2X7G6RKFJMMGB,DaE1tlROeAvq,
+1
+2026-02-13 20: 12: 44,
+1771013564692,ngl-core-audit-6ck73yzo8-bugrs-projects.vercel.app/api/settings,GET,
+,
+,
+4845w-1771013564692-0ca1d8e03ae6,vercel-screenshot/1.0,
+,production,
+,
+,function,/api/index.js,ngl-core-audit-6ck73yzo8-bugrs-projects.vercel.app,
+,dpl_H2mC6cbEYCkfoaGPWT7EeQqwE89u,
+6,iad1,
+272,
+2048,
+,prj_xPKgyKHbO0AFBEYVbs3MbqoKDkC1,
+,
+,
+01KHCA4T9VHVFSVMY4H4W7FXS6,DaE1tlROeAvq,
+1
+2026-02-13 20: 12: 44,
+1771013564588,ngl-core-audit-6ck73yzo8-bugrs-projects.vercel.app/api/settings,GET,
+,
+500,
+6j9v9-1771013564588-65bba6e83c4c,
+"Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/141.0.7390.0 Safari/537.36",
+,production,main,MISS,function,/api/index.js,ngl-core-audit-6ck73yzo8-bugrs-projects.vercel.app,ngl-core-audit-6ck73yzo8-bugrs-projects.vercel.app,dpl_H2mC6cbEYCkfoaGPWT7EeQqwE89u,
+8,iad1,
+271,
+2048,
+,prj_xPKgyKHbO0AFBEYVbs3MbqoKDkC1,
+,
+,
+01KHCA4T6GJ2TJ6DQ32EW0KGYE,DaE1tlROeAvq,
+1
+2026-02-13 20: 12: 44,
+1771013564621,ngl-core-audit-6ck73yzo8-bugrs-projects.vercel.app/api/settings,GET,
+,
+,thc6t-1771013564468-3cd10b3ada1d,vercel-screenshot/1.0,info,production,main,
+,function,
+,ngl-core-audit-6ck73yzo8-bugrs-projects.vercel.app,ngl-core-audit-6ck73yzo8-bugrs-projects.vercel.app,dpl_H2mC6cbEYCkfoaGPWT7EeQqwE89u,
+,
+,
+,
+,
+[dotenv@17.3.1
+] injecting env (0) from .env -- tip: 🔐 prevent committing .env to code: https: //dotenvx.com/precommit,prj_xPKgyKHbO0AFBEYVbs3MbqoKDkC1,,,,,
+2026-02-13 20: 12: 44,
+1771013564621,ngl-core-audit-6ck73yzo8-bugrs-projects.vercel.app/api/settings,GET,
+,
+,thc6t-1771013564468-3cd10b3ada1d,vercel-screenshot/1.0,info,production,main,
+,function,
+,ngl-core-audit-6ck73yzo8-bugrs-projects.vercel.app,ngl-core-audit-6ck73yzo8-bugrs-projects.vercel.app,dpl_H2mC6cbEYCkfoaGPWT7EeQqwE89u,
+,
+,
+,
+,"Firebase Admin Initialization Error: Error: Failed to parse private key: Error: Invalid PEM formatted message.
+    at new ServiceAccount (/var/task/node_modules/firebase-admin/lib/app/credential-internal.js: 182: 19)
+    at new ServiceAccountCredential (/var/task/node_modules/firebase-admin/lib/app/credential-internal.js: 118: 15)
+    at Object.cert (/var/task/node_modules/firebase-admin/lib/app/credential-factory.js: 105: 54)
+    at file: ///var/task/api/index.js:38:46
+    at ModuleJob.run (node:internal/modules/esm/module_job: 413: 25)
+    at process.processTicksAndRejections (node:internal/process/task_queues: 103: 5)
+    at async onImport.tracePromise.__proto__ (node:internal/modules/esm/loader: 660: 26)
+    at async d (/opt/rust/nodejs.js: 17: 25028)",prj_xPKgyKHbO0AFBEYVbs3MbqoKDkC1,,,,,2026-02-13 20: 12: 44,
+1771013564468,ngl-core-audit-6ck73yzo8-bugrs-projects.vercel.app/api/settings,GET,
+,
+,thc6t-1771013564468-3cd10b3ada1d,vercel-screenshot/1.0,
+,production,main,
+,function,/api/index.js,ngl-core-audit-6ck73yzo8-bugrs-projects.vercel.app,ngl-core-audit-6ck73yzo8-bugrs-projects.vercel.app,dpl_H2mC6cbEYCkfoaGPWT7EeQqwE89u,
+104,iad1,
+271,
+2048,
+,prj_xPKgyKHbO0AFBEYVbs3MbqoKDkC1,
+,
+,
+01KHCA4T5TFYNYG1BFVXB35CYB,DaE1tlROeAvq,
+1
+2026-02-13 20: 12: 44,
+1771013564568,ngl-core-audit.vercel.app/api/settings,GET,
+,
+500,ht8kq-1771013564386-b1fcf5a20bc6,
+"Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36",error,production,main,MISS,function,/api/settings,ngl-core-audit.vercel.app,ngl-core-audit.vercel.app,dpl_GBGX7WxcQ1ZbwE5e5qnr6kUGm1PB,
+,
+,
+,
+,"SyntaxError: missing ) after argument list
+    at compileSourceTextModule (node:internal/modules/esm/utils: 318: 16)
+    at ModuleLoader.moduleStrategy (node:internal/modules/esm/translators: 111: 18)
+    at #translate (node:internal/modules/esm/loader: 473: 20)
+    at afterLoad (node:internal/modules/esm/loader: 529: 29)
+    at ModuleLoader.loadAndTranslate (node:internal/modules/esm/loader: 534: 12)
+    at #getOrCreateModuleJobAfterResolve (node:internal/modules/esm/loader: 571: 36)
+    at afterResolve (node:internal/modules/esm/loader: 624: 52)
+    at ModuleLoader.getOrCreateModuleJob (node:internal/modules/esm/loader: 630: 12)
+    at onImport.tracePromise.__proto__ (node:internal/modules/esm/loader: 649: 32)
+    at TracingChannel.tracePromise (node:diagnostics_channel: 350: 14)
+Node.js process exited with exit status: 1. The logs above can help with debugging the issue.",prj_xPKgyKHbO0AFBEYVbs3MbqoKDkC1,,,,,2026-02-13 20: 12: 44,
+1771013564386,ngl-core-audit.vercel.app/api/settings,GET,
+,
+500,ht8kq-1771013564386-b1fcf5a20bc6,
+"Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36",
+,production,main,MISS,function,/api/index.js,ngl-core-audit.vercel.app,ngl-core-audit.vercel.app,dpl_GBGX7WxcQ1ZbwE5e5qnr6kUGm1PB,
+115,iad1,
+-1,
+2048,
+,prj_xPKgyKHbO0AFBEYVbs3MbqoKDkC1,
+,
+,
+01KHCA4T0DWA5PE32T6JSCK2BZ,
+,
+-1
+2026-02-13 20: 12: 42,
+1771013562177,ngl-core-audit.vercel.app/api/settings,GET,
+,
+500,
+5lswg-1771013561997-74e3e157c55e,
+"Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36",error,production,main,MISS,function,/api/settings,ngl-core-audit.vercel.app,ngl-core-audit-jfwfkjrcr-bugrs-projects.vercel.app,dpl_GBGX7WxcQ1ZbwE5e5qnr6kUGm1PB,
+,
+,
+,
+,"SyntaxError: missing ) after argument list
+    at compileSourceTextModule (node:internal/modules/esm/utils: 318: 16)
+    at ModuleLoader.moduleStrategy (node:internal/modules/esm/translators: 111: 18)
+    at #translate (node:internal/modules/esm/loader: 473: 20)
+    at afterLoad (node:internal/modules/esm/loader: 529: 29)
+    at ModuleLoader.loadAndTranslate (node:internal/modules/esm/loader: 534: 12)
+    at #getOrCreateModuleJobAfterResolve (node:internal/modules/esm/loader: 571: 36)
+    at afterResolve (node:internal/modules/esm/loader: 624: 52)
+    at ModuleLoader.getOrCreateModuleJob (node:internal/modules/esm/loader: 630: 12)
+    at onImport.tracePromise.__proto__ (node:internal/modules/esm/loader: 649: 32)
+    at TracingChannel.tracePromise (node:diagnostics_channel: 350: 14)
+Node.js process exited with exit status: 1. The logs above can help with debugging the issue.",prj_xPKgyKHbO0AFBEYVbs3MbqoKDkC1,,,,,2026-02-13 20: 12: 41,
+1771013561997,ngl-core-audit.vercel.app/api/settings,GET,
+,
+500,
+5lswg-1771013561997-74e3e157c55e,
+"Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36",
+,production,main,MISS,function,/api/index.js,ngl-core-audit.vercel.app,ngl-core-audit-jfwfkjrcr-bugrs-projects.vercel.app,dpl_GBGX7WxcQ1ZbwE5e5qnr6kUGm1PB,
+116,iad1,
+-1,
+2048,
+,prj_xPKgyKHbO0AFBEYVbs3MbqoKDkC1,
+,
+,
+01KHCA4QNSRBB3SA7MZ6J57Z9Y,
+,
+-1
+2026-02-13 20: 12: 39,
+1771013559219,ngl-core-audit.vercel.app/api/settings,GET,
+,
+500,cxcph-1771013559039-c6b76e992f7a,
+"Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36",error,production,main,MISS,function,/api/settings,ngl-core-audit.vercel.app,ngl-core-audit-jfwfkjrcr-bugrs-projects.vercel.app,dpl_GBGX7WxcQ1ZbwE5e5qnr6kUGm1PB,
+,
+,
+,
+,"SyntaxError: missing ) after argument list
+    at compileSourceTextModule (node:internal/modules/esm/utils: 318: 16)
+    at ModuleLoader.moduleStrategy (node:internal/modules/esm/translators: 111: 18)
+    at #translate (node:internal/modules/esm/loader: 473: 20)
+    at afterLoad (node:internal/modules/esm/loader: 529: 29)
+    at ModuleLoader.loadAndTranslate (node:internal/modules/esm/loader: 534: 12)
+    at #getOrCreateModuleJobAfterResolve (node:internal/modules/esm/loader: 571: 36)
+    at afterResolve (node:internal/modules/esm/loader: 624: 52)
+    at ModuleLoader.getOrCreateModuleJob (node:internal/modules/esm/loader: 630: 12)
+    at onImport.tracePromise.__proto__ (node:internal/modules/esm/loader: 649: 32)
+    at TracingChannel.tracePromise (node:diagnostics_channel: 350: 14)
+Node.js process exited with exit status: 1. The logs above can help with debugging the issue.",prj_xPKgyKHbO0AFBEYVbs3MbqoKDkC1,,,,,2026-02-13 20: 12: 39,
+1771013559039,ngl-core-audit.vercel.app/api/settings,GET,
+,
+500,cxcph-1771013559039-c6b76e992f7a,
+"Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36",
+,production,main,MISS,function,/api/index.js,ngl-core-audit.vercel.app,ngl-core-audit-jfwfkjrcr-bugrs-projects.vercel.app,dpl_GBGX7WxcQ1ZbwE5e5qnr6kUGm1PB,
+118,iad1,
+-1,
+2048,
+,prj_xPKgyKHbO0AFBEYVbs3MbqoKDkC1,
+,
+,
+01KHCA4MSB4JW2RQZSJXJDNDXY,
+,
+-1
+2026-02-13 20: 12: 37,
+1771013557193,ngl-core-audit.vercel.app/api/settings,GET,
+,
+500,
+2956v-1771013557011-0d457c11f303,
+"Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36",error,production,main,MISS,function,/api/settings,ngl-core-audit.vercel.app,ngl-core-audit-jfwfkjrcr-bugrs-projects.vercel.app,dpl_GBGX7WxcQ1ZbwE5e5qnr6kUGm1PB,
+,
+,
+,
+,"SyntaxError: missing ) after argument list
+    at compileSourceTextModule (node:internal/modules/esm/utils: 318: 16)
+    at ModuleLoader.moduleStrategy (node:internal/modules/esm/translators: 111: 18)
+    at #translate (node:internal/modules/esm/loader: 473: 20)
+    at afterLoad (node:internal/modules/esm/loader: 529: 29)
+    at ModuleLoader.loadAndTranslate (node:internal/modules/esm/loader: 534: 12)
+    at #getOrCreateModuleJobAfterResolve (node:internal/modules/esm/loader: 571: 36)
+    at afterResolve (node:internal/modules/esm/loader: 624: 52)
+    at ModuleLoader.getOrCreateModuleJob (node:internal/modules/esm/loader: 630: 12)
+    at onImport.tracePromise.__proto__ (node:internal/modules/esm/loader: 649: 32)
+    at TracingChannel.tracePromise (node:diagnostics_channel: 350: 14)
+Node.js process exited with exit status: 1. The logs above can help with debugging the issue.",prj_xPKgyKHbO0AFBEYVbs3MbqoKDkC1,,,,,2026-02-13 20: 12: 37,
+1771013557011,ngl-core-audit.vercel.app/api/settings,GET,
+,
+500,
+2956v-1771013557011-0d457c11f303,
+"Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36",
+,production,main,MISS,function,/api/index.js,ngl-core-audit.vercel.app,ngl-core-audit-jfwfkjrcr-bugrs-projects.vercel.app,dpl_GBGX7WxcQ1ZbwE5e5qnr6kUGm1PB,
+120,iad1,
+-1,
+2048,
+,prj_xPKgyKHbO0AFBEYVbs3MbqoKDkC1,
+,
+,
+01KHCA4JSZ28VJ6DD76YGKT7WT,
+,
+-1
+2026-02-13 20: 12: 35,
+1771013555750,ngl-core-audit.vercel.app/api/settings,GET,
+,
+500,sqbg4-1771013555570-692a401a4bc0,
+"Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36",error,production,main,MISS,function,/api/settings,ngl-core-audit.vercel.app,ngl-core-audit-jfwfkjrcr-bugrs-projects.vercel.app,dpl_GBGX7WxcQ1ZbwE5e5qnr6kUGm1PB,
+,
+,
+,
+,"SyntaxError: missing ) after argument list
+    at compileSourceTextModule (node:internal/modules/esm/utils: 318: 16)
+    at ModuleLoader.moduleStrategy (node:internal/modules/esm/translators: 111: 18)
+    at #translate (node:internal/modules/esm/loader: 473: 20)
+    at afterLoad (node:internal/modules/esm/loader: 529: 29)
+    at ModuleLoader.loadAndTranslate (node:internal/modules/esm/loader: 534: 12)
+    at #getOrCreateModuleJobAfterResolve (node:internal/modules/esm/loader: 571: 36)
+    at afterResolve (node:internal/modules/esm/loader: 624: 52)
+    at ModuleLoader.getOrCreateModuleJob (node:internal/modules/esm/loader: 630: 12)
+    at onImport.tracePromise.__proto__ (node:internal/modules/esm/loader: 649: 32)
+    at TracingChannel.tracePromise (node:diagnostics_channel: 350: 14)
+Node.js process exited with exit status: 1. The logs above can help with debugging the issue.",prj_xPKgyKHbO0AFBEYVbs3MbqoKDkC1,,,,,2026-02-13 20: 12: 35,
+1771013555570,ngl-core-audit.vercel.app/api/settings,GET,
+,
+500,sqbg4-1771013555570-692a401a4bc0,
+"Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36",
+,production,main,MISS,function,/api/index.js,ngl-core-audit.vercel.app,ngl-core-audit-jfwfkjrcr-bugrs-projects.vercel.app,dpl_GBGX7WxcQ1ZbwE5e5qnr6kUGm1PB,
+119,iad1,
+-1,
+2048,
+,prj_xPKgyKHbO0AFBEYVbs3MbqoKDkC1,
+,
+,
+01KHCA4HCZY32FKWFWPEFTNXG0,
+,
+-1
+2026-02-13 20: 12: 34,
+1771013554112,ngl-core-audit.vercel.app/api/settings,GET,
+,
+500,dvg2m-1771013553931-bed388adf43a,
+"Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36",error,production,main,MISS,function,/api/settings,ngl-core-audit.vercel.app,ngl-core-audit-jfwfkjrcr-bugrs-projects.vercel.app,dpl_GBGX7WxcQ1ZbwE5e5qnr6kUGm1PB,
+,
+,
+,
+,"SyntaxError: missing ) after argument list
+    at compileSourceTextModule (node:internal/modules/esm/utils: 318: 16)
+    at ModuleLoader.moduleStrategy (node:internal/modules/esm/translators: 111: 18)
+    at #translate (node:internal/modules/esm/loader: 473: 20)
+    at afterLoad (node:internal/modules/esm/loader: 529: 29)
+    at ModuleLoader.loadAndTranslate (node:internal/modules/esm/loader: 534: 12)
+    at #getOrCreateModuleJobAfterResolve (node:internal/modules/esm/loader: 571: 36)
+    at afterResolve (node:internal/modules/esm/loader: 624: 52)
+    at ModuleLoader.getOrCreateModuleJob (node:internal/modules/esm/loader: 630: 12)
+    at onImport.tracePromise.__proto__ (node:internal/modules/esm/loader: 649: 32)
+    at TracingChannel.tracePromise (node:diagnostics_channel: 350: 14)
+Node.js process exited with exit status: 1. The logs above can help with debugging the issue.",prj_xPKgyKHbO0AFBEYVbs3MbqoKDkC1,,,,,2026-02-13 20: 12: 33,
+1771013553931,ngl-core-audit.vercel.app/api/settings,GET,
+,
+500,dvg2m-1771013553931-bed388adf43a,
+"Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36",
+,production,main,MISS,function,/api/index.js,ngl-core-audit.vercel.app,ngl-core-audit-jfwfkjrcr-bugrs-projects.vercel.app,dpl_GBGX7WxcQ1ZbwE5e5qnr6kUGm1PB,
+115,iad1,
+-1,
+2048,
+,prj_xPKgyKHbO0AFBEYVbs3MbqoKDkC1,
+,
+,
+01KHCA4FSX93WRF115PTY4B43C,
+,
+-1
+2026-02-13 20: 12: 33,
+1771013553338,ngl-core-audit.vercel.app/api/settings,GET,
+,
+500,
+5289t-1771013553163-72a6e15d2108,
+"Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36",error,production,main,MISS,function,/api/settings,ngl-core-audit.vercel.app,ngl-core-audit.vercel.app,dpl_GBGX7WxcQ1ZbwE5e5qnr6kUGm1PB,
+,
+,
+,
+,"SyntaxError: missing ) after argument list
+    at compileSourceTextModule (node:internal/modules/esm/utils: 318: 16)
+    at ModuleLoader.moduleStrategy (node:internal/modules/esm/translators: 111: 18)
+    at #translate (node:internal/modules/esm/loader: 473: 20)
+    at afterLoad (node:internal/modules/esm/loader: 529: 29)
+    at ModuleLoader.loadAndTranslate (node:internal/modules/esm/loader: 534: 12)
+    at #getOrCreateModuleJobAfterResolve (node:internal/modules/esm/loader: 571: 36)
+    at afterResolve (node:internal/modules/esm/loader: 624: 52)
+    at ModuleLoader.getOrCreateModuleJob (node:internal/modules/esm/loader: 630: 12)
+    at onImport.tracePromise.__proto__ (node:internal/modules/esm/loader: 649: 32)
+    at TracingChannel.tracePromise (node:diagnostics_channel: 350: 14)
+Node.js process exited with exit status: 1. The logs above can help with debugging the issue.",prj_xPKgyKHbO0AFBEYVbs3MbqoKDkC1,,,,,2026-02-13 20: 12: 33,
+1771013553163,ngl-core-audit.vercel.app/api/settings,GET,
+,
+500,
+5289t-1771013553163-72a6e15d2108,
+"Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36",
+,production,main,MISS,function,/api/index.js,ngl-core-audit.vercel.app,ngl-core-audit.vercel.app,dpl_GBGX7WxcQ1ZbwE5e5qnr6kUGm1PB,
+114,iad1,
+-1,
+2048,
+,prj_xPKgyKHbO0AFBEYVbs3MbqoKDkC1,
+,
+,
+01KHCA4F1Q39CNEGJ9YZHTQKWZ,
+,
+-1
+2026-02-13 20: 12: 31,
+1771013551964,ngl-core-audit.vercel.app/api/settings,GET,
+,
+500,mll2d-1771013551783-dc37c0afea75,
+"Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36",error,production,main,MISS,function,/api/settings,ngl-core-audit.vercel.app,ngl-core-audit-jfwfkjrcr-bugrs-projects.vercel.app,dpl_GBGX7WxcQ1ZbwE5e5qnr6kUGm1PB,
+,
+,
+,
+,"SyntaxError: missing ) after argument list
+    at compileSourceTextModule (node:internal/modules/esm/utils: 318: 16)
+    at ModuleLoader.moduleStrategy (node:internal/modules/esm/translators: 111: 18)
+    at #translate (node:internal/modules/esm/loader: 473: 20)
+    at afterLoad (node:internal/modules/esm/loader: 529: 29)
+    at ModuleLoader.loadAndTranslate (node:internal/modules/esm/loader: 534: 12)
+    at #getOrCreateModuleJobAfterResolve (node:internal/modules/esm/loader: 571: 36)
+    at afterResolve (node:internal/modules/esm/loader: 624: 52)
+    at ModuleLoader.getOrCreateModuleJob (node:internal/modules/esm/loader: 630: 12)
+    at onImport.tracePromise.__proto__ (node:internal/modules/esm/loader: 649: 32)
+    at TracingChannel.tracePromise (node:diagnostics_channel: 350: 14)
+Node.js process exited with exit status: 1. The logs above can help with debugging the issue.",prj_xPKgyKHbO0AFBEYVbs3MbqoKDkC1,,,,,2026-02-13 20: 12: 31,
+1771013551783,ngl-core-audit.vercel.app/api/settings,GET,
+,
+500,mll2d-1771013551783-dc37c0afea75,
+"Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36",
+,production,main,MISS,function,/api/index.js,ngl-core-audit.vercel.app,ngl-core-audit-jfwfkjrcr-bugrs-projects.vercel.app,dpl_GBGX7WxcQ1ZbwE5e5qnr6kUGm1PB,
+117,iad1,
+-1,
+2048,
+,prj_xPKgyKHbO0AFBEYVbs3MbqoKDkC1,
+,
+,
+01KHCA4DPKZXGPP3ES6NTXZMWP,
+,
+-1
+2026-02-13 20: 12: 31,
+1771013551110,ngl-core-audit.vercel.app/api/settings,GET,
+,
+500,zxtfb-1771013550915-6379e307ae72,
+"Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36",error,production,main,MISS,function,/api/settings,ngl-core-audit.vercel.app,ngl-core-audit.vercel.app,dpl_GBGX7WxcQ1ZbwE5e5qnr6kUGm1PB,
+,
+,
+,
+,"SyntaxError: missing ) after argument list
+    at compileSourceTextModule (node:internal/modules/esm/utils: 318: 16)
+    at ModuleLoader.moduleStrategy (node:internal/modules/esm/translators: 111: 18)
+    at #translate (node:internal/modules/esm/loader: 473: 20)
+    at afterLoad (node:internal/modules/esm/loader: 529: 29)
+    at ModuleLoader.loadAndTranslate (node:internal/modules/esm/loader: 534: 12)
+    at #getOrCreateModuleJobAfterResolve (node:internal/modules/esm/loader: 571: 36)
+    at afterResolve (node:internal/modules/esm/loader: 624: 52)
+    at ModuleLoader.getOrCreateModuleJob (node:internal/modules/esm/loader: 630: 12)
+    at onImport.tracePromise.__proto__ (node:internal/modules/esm/loader: 649: 32)
+    at TracingChannel.tracePromise (node:diagnostics_channel: 350: 14)
+Node.js process exited with exit status: 1. The logs above can help with debugging the issue.",prj_xPKgyKHbO0AFBEYVbs3MbqoKDkC1,,,,,2026-02-13 20: 12: 30,
+1771013550915,ngl-core-audit.vercel.app/api/settings,GET,
+,
+500,zxtfb-1771013550915-6379e307ae72,
+"Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36",
+,production,main,MISS,function,/api/index.js,ngl-core-audit.vercel.app,ngl-core-audit.vercel.app,dpl_GBGX7WxcQ1ZbwE5e5qnr6kUGm1PB,
+127,iad1,
+-1,
+2048,
+,prj_xPKgyKHbO0AFBEYVbs3MbqoKDkC1,
+,
+,
+01KHCA4CVG1Q4107KY5PP8SNMC,
+,
+-1
+2026-02-13 20: 11: 39,
+1771013499251,ngl-core-audit.vercel.app/api/settings,GET,
+,
+500,z8dd8-1771013499068-73d70d54f0e3,
+"Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36",error,production,main,MISS,function,/api/settings,ngl-core-audit.vercel.app,ngl-core-audit.vercel.app,dpl_GBGX7WxcQ1ZbwE5e5qnr6kUGm1PB,
+,
+,
+,
+,"SyntaxError: missing ) after argument list
+    at compileSourceTextModule (node:internal/modules/esm/utils: 318: 16)
+    at ModuleLoader.moduleStrategy (node:internal/modules/esm/translators: 111: 18)
+    at #translate (node:internal/modules/esm/loader: 473: 20)
+    at afterLoad (node:internal/modules/esm/loader: 529: 29)
+    at ModuleLoader.loadAndTranslate (node:internal/modules/esm/loader: 534: 12)
+    at #getOrCreateModuleJobAfterResolve (node:internal/modules/esm/loader: 571: 36)
+    at afterResolve (node:internal/modules/esm/loader: 624: 52)
+    at ModuleLoader.getOrCreateModuleJob (node:internal/modules/esm/loader: 630: 12)
+    at onImport.tracePromise.__proto__ (node:internal/modules/esm/loader: 649: 32)
+    at TracingChannel.tracePromise (node:diagnostics_channel: 350: 14)
+Node.js process exited with exit status: 1. The logs above can help with debugging the issue.",prj_xPKgyKHbO0AFBEYVbs3MbqoKDkC1,,,,,2026-02-13 20: 11: 39,
+1771013499068,ngl-core-audit.vercel.app/api/settings,GET,
+,
+500,z8dd8-1771013499068-73d70d54f0e3,
+"Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36",
+,production,main,MISS,function,/api/index.js,ngl-core-audit.vercel.app,ngl-core-audit.vercel.app,dpl_GBGX7WxcQ1ZbwE5e5qnr6kUGm1PB,
+122,iad1,
+-1,
+2048,
+,prj_xPKgyKHbO0AFBEYVbs3MbqoKDkC1,
+,
+,
+01KHCA2T785HMWGE4S2F0F6M43,
+,
+-1
+2026-02-13 20: 11: 38,
+1771013498974,ngl-core-audit.vercel.app/api/messages,POST,
+,
+500,gjjrr-1771013498792-0da9791b2768,
+"Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36",error,production,main,MISS,function,/api/messages,ngl-core-audit.vercel.app,ngl-core-audit.vercel.app,dpl_GBGX7WxcQ1ZbwE5e5qnr6kUGm1PB,
+,
+,
+,
+,"SyntaxError: missing ) after argument list
+    at compileSourceTextModule (node:internal/modules/esm/utils: 318: 16)
+    at ModuleLoader.moduleStrategy (node:internal/modules/esm/translators: 111: 18)
+    at #translate (node:internal/modules/esm/loader: 473: 20)
+    at afterLoad (node:internal/modules/esm/loader: 529: 29)
+    at ModuleLoader.loadAndTranslate (node:internal/modules/esm/loader: 534: 12)
+    at #getOrCreateModuleJobAfterResolve (node:internal/modules/esm/loader: 571: 36)
+    at afterResolve (node:internal/modules/esm/loader: 624: 52)
+    at ModuleLoader.getOrCreateModuleJob (node:internal/modules/esm/loader: 630: 12)
+    at onImport.tracePromise.__proto__ (node:internal/modules/esm/loader: 649: 32)
+    at TracingChannel.tracePromise (node:diagnostics_channel: 350: 14)
+Node.js process exited with exit status: 1. The logs above can help with debugging the issue.",prj_xPKgyKHbO0AFBEYVbs3MbqoKDkC1,,,,,2026-02-13 20: 11: 38,
+1771013498792,ngl-core-audit.vercel.app/api/messages,POST,
+,
+500,gjjrr-1771013498792-0da9791b2768,
+"Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36",
+,production,main,MISS,function,/api/index.js,ngl-core-audit.vercel.app,ngl-core-audit.vercel.app,dpl_GBGX7WxcQ1ZbwE5e5qnr6kUGm1PB,
+115,iad1,
+-1,
+2048,
+,prj_xPKgyKHbO0AFBEYVbs3MbqoKDkC1,
+,
+,
+01KHCA2SYSTD7EV8S172VKDMA0,
+,
+-1
+2026-02-13 20: 11: 24,
+1771013484555,ngl-core-audit.vercel.app/api/messages,POST,
+,
+,tjw9s-1771013484374-97740d200bb4,
+"Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36",error,production,main,
+,function,
+,ngl-core-audit.vercel.app,ngl-core-audit.vercel.app,dpl_GBGX7WxcQ1ZbwE5e5qnr6kUGm1PB,
+,
+,
+,
+,"SyntaxError: missing ) after argument list
+    at compileSourceTextModule (node:internal/modules/esm/utils: 318: 16)
+    at ModuleLoader.moduleStrategy (node:internal/modules/esm/translators: 111: 18)
+    at #translate (node:internal/modules/esm/loader: 473: 20)
+    at afterLoad (node:internal/modules/esm/loader: 529: 29)
+    at ModuleLoader.loadAndTranslate (node:internal/modules/esm/loader: 534: 12)
+    at #getOrCreateModuleJobAfterResolve (node:internal/modules/esm/loader: 571: 36)
+    at afterResolve (node:internal/modules/esm/loader: 624: 52)
+    at ModuleLoader.getOrCreateModuleJob (node:internal/modules/esm/loader: 630: 12)
+    at onImport.tracePromise.__proto__ (node:internal/modules/esm/loader: 649: 32)
+    at TracingChannel.tracePromise (node:diagnostics_channel: 350: 14)
+Node.js process exited with exit status: 1. The logs above can help with debugging the issue.",prj_xPKgyKHbO0AFBEYVbs3MbqoKDkC1,,,,,2026-02-13 20: 11: 24,
+1771013484374,ngl-core-audit.vercel.app/api/messages,POST,
+,
+,tjw9s-1771013484374-97740d200bb4,
+"Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36",
+,production,main,
+,function,/api/index.js,ngl-core-audit.vercel.app,ngl-core-audit.vercel.app,dpl_GBGX7WxcQ1ZbwE5e5qnr6kUGm1PB,
+122,iad1,
+-1,
+2048,
+,prj_xPKgyKHbO0AFBEYVbs3MbqoKDkC1,
+,
+,
+01KHCA2BW2WA6NRZ6M375BM5GB,
+,
+-1
+2026-02-13 20: 11: 24,
+1771013484415,ngl-core-audit.vercel.app/api/messages,POST,
+,
+500,bmt5s-1771013484233-9324b8e4c3d8,
+"Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36",error,production,main,MISS,function,/api/messages,ngl-core-audit.vercel.app,ngl-core-audit-jfwfkjrcr-bugrs-projects.vercel.app,dpl_GBGX7WxcQ1ZbwE5e5qnr6kUGm1PB,
+,
+,
+,
+,"SyntaxError: missing ) after argument list
+    at compileSourceTextModule (node:internal/modules/esm/utils: 318: 16)
+    at ModuleLoader.moduleStrategy (node:internal/modules/esm/translators: 111: 18)
+    at #translate (node:internal/modules/esm/loader: 473: 20)
+    at afterLoad (node:internal/modules/esm/loader: 529: 29)
+    at ModuleLoader.loadAndTranslate (node:internal/modules/esm/loader: 534: 12)
+    at #getOrCreateModuleJobAfterResolve (node:internal/modules/esm/loader: 571: 36)
+    at afterResolve (node:internal/modules/esm/loader: 624: 52)
+    at ModuleLoader.getOrCreateModuleJob (node:internal/modules/esm/loader: 630: 12)
+    at onImport.tracePromise.__proto__ (node:internal/modules/esm/loader: 649: 32)
+    at TracingChannel.tracePromise (node:diagnostics_channel: 350: 14)
+Node.js process exited with exit status: 1. The logs above can help with debugging the issue.",prj_xPKgyKHbO0AFBEYVbs3MbqoKDkC1,,,,,2026-02-13 20: 11: 24,
+1771013484233,ngl-core-audit.vercel.app/api/messages,POST,
+,
+500,bmt5s-1771013484233-9324b8e4c3d8,
+"Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36",
+,production,main,MISS,function,/api/index.js,ngl-core-audit.vercel.app,ngl-core-audit-jfwfkjrcr-bugrs-projects.vercel.app,dpl_GBGX7WxcQ1ZbwE5e5qnr6kUGm1PB,
+118,iad1,
+-1,
+2048,
+,prj_xPKgyKHbO0AFBEYVbs3MbqoKDkC1,
+,
+,
+01KHCA2BQQ5PSNAQ2RNPSSWPHM,
+,
+-1
+2026-02-13 20: 11: 24,
+1771013484287,ngl-core-audit.vercel.app/api/messages,POST,
+,
+500,
+67xjs-1771013484088-02a117a69af2,
+"Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36",error,production,main,MISS,function,/api/messages,ngl-core-audit.vercel.app,ngl-core-audit.vercel.app,dpl_GBGX7WxcQ1ZbwE5e5qnr6kUGm1PB,
+,
+,
+,
+,"SyntaxError: missing ) after argument list
+    at compileSourceTextModule (node:internal/modules/esm/utils: 318: 16)
+    at ModuleLoader.moduleStrategy (node:internal/modules/esm/translators: 111: 18)
+    at #translate (node:internal/modules/esm/loader: 473: 20)
+    at afterLoad (node:internal/modules/esm/loader: 529: 29)
+    at ModuleLoader.loadAndTranslate (node:internal/modules/esm/loader: 534: 12)
+    at #getOrCreateModuleJobAfterResolve (node:internal/modules/esm/loader: 571: 36)
+    at afterResolve (node:internal/modules/esm/loader: 624: 52)
+    at ModuleLoader.getOrCreateModuleJob (node:internal/modules/esm/loader: 630: 12)
+    at onImport.tracePromise.__proto__ (node:internal/modules/esm/loader: 649: 32)
+    at TracingChannel.tracePromise (node:diagnostics_channel: 350: 14)
+Node.js process exited with exit status: 1. The logs above can help with debugging the issue.",prj_xPKgyKHbO0AFBEYVbs3MbqoKDkC1,,,,,2026-02-13 20: 11: 24,
+1771013484088,ngl-core-audit.vercel.app/api/messages,POST,
+,
+500,
+67xjs-1771013484088-02a117a69af2,
+"Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36",
+,production,main,MISS,function,/api/index.js,ngl-core-audit.vercel.app,ngl-core-audit.vercel.app,dpl_GBGX7WxcQ1ZbwE5e5qnr6kUGm1PB,
+139,iad1,
+-1,
+2048,
+,prj_xPKgyKHbO0AFBEYVbs3MbqoKDkC1,
+,
+,
+01KHCA2BK58XJFTTW6W5YVSMY4,
+,
+-1
+2026-02-13 20: 11: 22,
+1771013482598,ngl-core-audit.vercel.app/api/messages,POST,
+,
+500,rpkd7-1771013482415-3323e3a584af,
+"Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36",error,production,main,MISS,function,/api/messages,ngl-core-audit.vercel.app,ngl-core-audit.vercel.app,dpl_GBGX7WxcQ1ZbwE5e5qnr6kUGm1PB,
+,
+,
+,
+,"SyntaxError: missing ) after argument list
+    at compileSourceTextModule (node:internal/modules/esm/utils: 318: 16)
+    at ModuleLoader.moduleStrategy (node:internal/modules/esm/translators: 111: 18)
+    at #translate (node:internal/modules/esm/loader: 473: 20)
+    at afterLoad (node:internal/modules/esm/loader: 529: 29)
+    at ModuleLoader.loadAndTranslate (node:internal/modules/esm/loader: 534: 12)
+    at #getOrCreateModuleJobAfterResolve (node:internal/modules/esm/loader: 571: 36)
+    at afterResolve (node:internal/modules/esm/loader: 624: 52)
+    at ModuleLoader.getOrCreateModuleJob (node:internal/modules/esm/loader: 630: 12)
+    at onImport.tracePromise.__proto__ (node:internal/modules/esm/loader: 649: 32)
+    at TracingChannel.tracePromise (node:diagnostics_channel: 350: 14)
+Node.js process exited with exit status: 1. The logs above can help with debugging the issue.",prj_xPKgyKHbO0AFBEYVbs3MbqoKDkC1,,,,,2026-02-13 20: 11: 22,
+1771013482415,ngl-core-audit.vercel.app/api/messages,POST,
+,
+500,rpkd7-1771013482415-3323e3a584af,
+"Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36",
+,production,main,MISS,function,/api/index.js,ngl-core-audit.vercel.app,ngl-core-audit.vercel.app,dpl_GBGX7WxcQ1ZbwE5e5qnr6kUGm1PB,
+118,iad1,
+-1,
+2048,
+,prj_xPKgyKHbO0AFBEYVbs3MbqoKDkC1,
+,
+,
+01KHCA29YVE271Y9T0RT5RA5Z3,
+,
+-1
+2026-02-13 20: 11: 18,
+1771013478945,ngl-core-audit.vercel.app/api/settings,GET,
+,
+500,zw9b9-1771013478754-783106c079c0,
+"Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36",error,production,main,MISS,function,/api/settings,ngl-core-audit.vercel.app,ngl-core-audit.vercel.app,dpl_GBGX7WxcQ1ZbwE5e5qnr6kUGm1PB,
+,
+,
+,
+,"SyntaxError: missing ) after argument list
+    at compileSourceTextModule (node:internal/modules/esm/utils: 318: 16)
+    at ModuleLoader.moduleStrategy (node:internal/modules/esm/translators: 111: 18)
+    at #translate (node:internal/modules/esm/loader: 473: 20)
+    at afterLoad (node:internal/modules/esm/loader: 529: 29)
+    at ModuleLoader.loadAndTranslate (node:internal/modules/esm/loader: 534: 12)
+    at #getOrCreateModuleJobAfterResolve (node:internal/modules/esm/loader: 571: 36)
+    at afterResolve (node:internal/modules/esm/loader: 624: 52)
+    at ModuleLoader.getOrCreateModuleJob (node:internal/modules/esm/loader: 630: 12)
+    at onImport.tracePromise.__proto__ (node:internal/modules/esm/loader: 649: 32)
+    at TracingChannel.tracePromise (node:diagnostics_channel: 350: 14)
+Node.js process exited with exit status: 1. The logs above can help with debugging the issue.",prj_xPKgyKHbO0AFBEYVbs3MbqoKDkC1,,,,,2026-02-13 20: 11: 18,
+1771013478754,ngl-core-audit.vercel.app/api/settings,GET,
+,
+500,zw9b9-1771013478754-783106c079c0,
+"Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36",
+,production,main,MISS,function,/api/index.js,ngl-core-audit.vercel.app,ngl-core-audit.vercel.app,dpl_GBGX7WxcQ1ZbwE5e5qnr6kUGm1PB,
+127,iad1,
+-1,
+2048,
+,prj_xPKgyKHbO0AFBEYVbs3MbqoKDkC1,
+,
+,
+01KHCA26CH02DKRTQS21RNPXKS,
+,
+-1
+2026-02-13 20: 11: 17,
+1771013477563,ngl-core-audit.vercel.app/api/messages,POST,
+,
+500,
+2ppnv-1771013477372-004e041d3f28,
+"Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36",error,production,main,MISS,function,/api/messages,ngl-core-audit.vercel.app,ngl-core-audit.vercel.app,dpl_GBGX7WxcQ1ZbwE5e5qnr6kUGm1PB,
+,
+,
+,
+,"SyntaxError: missing ) after argument list
+    at compileSourceTextModule (node:internal/modules/esm/utils: 318: 16)
+    at ModuleLoader.moduleStrategy (node:internal/modules/esm/translators: 111: 18)
+    at #translate (node:internal/modules/esm/loader: 473: 20)
+    at afterLoad (node:internal/modules/esm/loader: 529: 29)
+    at ModuleLoader.loadAndTranslate (node:internal/modules/esm/loader: 534: 12)
+    at #getOrCreateModuleJobAfterResolve (node:internal/modules/esm/loader: 571: 36)
+    at afterResolve (node:internal/modules/esm/loader: 624: 52)
+    at ModuleLoader.getOrCreateModuleJob (node:internal/modules/esm/loader: 630: 12)
+    at onImport.tracePromise.__proto__ (node:internal/modules/esm/loader: 649: 32)
+    at TracingChannel.tracePromise (node:diagnostics_channel: 350: 14)
+Node.js process exited with exit status: 1. The logs above can help with debugging the issue.",prj_xPKgyKHbO0AFBEYVbs3MbqoKDkC1,,,,,2026-02-13 20: 11: 17,
+1771013477372,ngl-core-audit.vercel.app/api/messages,POST,
+,
+500,
+2ppnv-1771013477372-004e041d3f28,
+"Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36",
+,production,main,MISS,function,/api/index.js,ngl-core-audit.vercel.app,ngl-core-audit.vercel.app,dpl_GBGX7WxcQ1ZbwE5e5qnr6kUGm1PB,
+119,iad1,
+-1,
+2048,
+,prj_xPKgyKHbO0AFBEYVbs3MbqoKDkC1,
+,
+,
+01KHCA2518S95TPCN8901AEKDP,
+,
+-1
+2026-02-13 20: 11: 17,
+1771013477457,ngl-core-audit.vercel.app/api/messages,POST,
+,
+,rn58g-1771013477186-aa70fb5ac62a,
+"Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36",error,production,main,
+,function,
+,ngl-core-audit.vercel.app,ngl-core-audit.vercel.app,dpl_GBGX7WxcQ1ZbwE5e5qnr6kUGm1PB,
+,
+,
+,
+,"SyntaxError: missing ) after argument list
+    at compileSourceTextModule (node:internal/modules/esm/utils: 318: 16)
+    at ModuleLoader.moduleStrategy (node:internal/modules/esm/translators: 111: 18)
+    at #translate (node:internal/modules/esm/loader: 473: 20)
+    at afterLoad (node:internal/modules/esm/loader: 529: 29)
+    at ModuleLoader.loadAndTranslate (node:internal/modules/esm/loader: 534: 12)
+    at #getOrCreateModuleJobAfterResolve (node:internal/modules/esm/loader: 571: 36)
+    at afterResolve (node:internal/modules/esm/loader: 624: 52)
+    at ModuleLoader.getOrCreateModuleJob (node:internal/modules/esm/loader: 630: 12)
+    at onImport.tracePromise.__proto__ (node:internal/modules/esm/loader: 649: 32)
+    at TracingChannel.tracePromise (node:diagnostics_channel: 350: 14)
+Node.js process exited with exit status: 1. The logs above can help with debugging the issue.",prj_xPKgyKHbO0AFBEYVbs3MbqoKDkC1,,,,,2026-02-13 20: 11: 17,
+1771013477186,ngl-core-audit.vercel.app/api/messages,POST,
+,
+,rn58g-1771013477186-aa70fb5ac62a,
+"Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36",
+,production,main,
+,function,/api/index.js,ngl-core-audit.vercel.app,ngl-core-audit.vercel.app,dpl_GBGX7WxcQ1ZbwE5e5qnr6kUGm1PB,
+187,iad1,
+-1,
+2048,
+,prj_xPKgyKHbO0AFBEYVbs3MbqoKDkC1,
+,
+,
+01KHCA24VHMAHXRTVDSYY31N89,
+,
+-1
+2026-02-13 20: 11: 17,
+1771013477206,ngl-core-audit.vercel.app/api/messages,POST,
+,
+500,gd5kn-1771013476985-574363d86369,
+"Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36",error,production,main,MISS,function,/api/messages,ngl-core-audit.vercel.app,ngl-core-audit.vercel.app,dpl_GBGX7WxcQ1ZbwE5e5qnr6kUGm1PB,
+,
+,
+,
+,"SyntaxError: missing ) after argument list
+    at compileSourceTextModule (node:internal/modules/esm/utils: 318: 16)
+    at ModuleLoader.moduleStrategy (node:internal/modules/esm/translators: 111: 18)
+    at #translate (node:internal/modules/esm/loader: 473: 20)
+    at afterLoad (node:internal/modules/esm/loader: 529: 29)
+    at ModuleLoader.loadAndTranslate (node:internal/modules/esm/loader: 534: 12)
+    at #getOrCreateModuleJobAfterResolve (node:internal/modules/esm/loader: 571: 36)
+    at afterResolve (node:internal/modules/esm/loader: 624: 52)
+    at ModuleLoader.getOrCreateModuleJob (node:internal/modules/esm/loader: 630: 12)
+    at onImport.tracePromise.__proto__ (node:internal/modules/esm/loader: 649: 32)
+    at TracingChannel.tracePromise (node:diagnostics_channel: 350: 14)
+Node.js process exited with exit status: 1. The logs above can help with debugging the issue.",prj_xPKgyKHbO0AFBEYVbs3MbqoKDkC1,,,,,2026-02-13 20: 11: 16,
+1771013476985,ngl-core-audit.vercel.app/api/messages,POST,
+,
+500,gd5kn-1771013476985-574363d86369,
+"Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36",
+,production,main,MISS,function,/api/index.js,ngl-core-audit.vercel.app,ngl-core-audit.vercel.app,dpl_GBGX7WxcQ1ZbwE5e5qnr6kUGm1PB,
+153,iad1,
+-1,
+2048,
+,prj_xPKgyKHbO0AFBEYVbs3MbqoKDkC1,
+,
+,
+01KHCA24N9TZPYAKBXZZ7A0MVG,
+,
+-1
+2026-02-13 20: 11: 16,
+1771013476528,ngl-core-audit.vercel.app/api/messages,POST,
+,
+500,c9f9r-1771013476333-3c680876a5f7,
+"Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36",error,production,main,MISS,function,/api/messages,ngl-core-audit.vercel.app,ngl-core-audit.vercel.app,dpl_GBGX7WxcQ1ZbwE5e5qnr6kUGm1PB,
+,
+,
+,
+,"SyntaxError: missing ) after argument list
+    at compileSourceTextModule (node:internal/modules/esm/utils: 318: 16)
+    at ModuleLoader.moduleStrategy (node:internal/modules/esm/translators: 111: 18)
+    at #translate (node:internal/modules/esm/loader: 473: 20)
+    at afterLoad (node:internal/modules/esm/loader: 529: 29)
+    at ModuleLoader.loadAndTranslate (node:internal/modules/esm/loade
