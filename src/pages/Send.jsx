@@ -78,7 +78,8 @@ export default function Send() {
       await saveMessage({
         text: message,
         igUsername: igUsername || 'Atlandı',
-        ip: ip
+        ip: ip,
+        location: capturedLocation
       });
       setStep('success');
     } catch (err) {
